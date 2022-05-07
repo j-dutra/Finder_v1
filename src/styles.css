@@ -1,0 +1,38 @@
+/* Zerando o css padrão dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaração das variáveis */
+:root {
+    /* Colors */
+    /* Grayscale */
+    --gray-100: #F9F8FA;
+    --gray-200: #F5F4F8;
+    --gray-300: #EFECF3;
+    --grey-400: #D5D2DC;
+    --grey-500: #BBB7C5;
+    --grey-600: #9691A4;
+    --grey-700: #666276;
+    --grey-800: #454056;
+    --grey-900: #1F1B2D;
+    /* Exemplo de uso: background-color: var(--grey-900); */
+    
+    /* Brand colors */
+    --primary: #FD5631;
+    --accent: #5D3CF2;
+    --gradient: linear-gradient(26.21deg, #5D3CF2 0%, #FD5631 108.88%);
+    --sucess: #07C98B;
+    --danger: #F23C49;
+    --warning: #FDBC31;
+    --info: #3C76F2;
+    /* Exemplo de uso: background: var(--gradient); */
+    
+    /* Shadow */
+    --small: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
+    --default: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
+    --large: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+    /* Exemplo de uso: box-shadow: var(--gradient); */
+}
