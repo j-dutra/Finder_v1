@@ -27,7 +27,7 @@ module.exports = {
           "style-loader", // creates style nodes from JS strings
           "css-loader", // translates CSS into CommonJS
           "postcss-loader", // Loader for webpack to process CSS with PostCSS
-          "sass-loader", // compiles Sass to CSS, using Node Sass by default
+          // "sass-loader", // compiles Sass to CSS, using Node Sass by default
         ],
       },
       {
@@ -36,8 +36,8 @@ module.exports = {
           {
             loader: "file-loader", // This will resolves import/require() on a file into a url and emits the file into the output directory.
             options: {
-              name: "[name].[ext]",
-              outputPath: "assets/",
+              name: "img/[name].[ext]",
+              outputPath: "img/",
             },
           },
         ],

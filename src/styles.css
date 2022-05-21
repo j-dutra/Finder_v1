@@ -1,38 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /* Zerando o css padrão dos elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Declaração das variáveis */
 :root {
-    /* Colors */
-    /* Grayscale */
-    --gray-100: #F9F8FA;
-    --gray-200: #F5F4F8;
-    --gray-300: #EFECF3;
-    --grey-400: #D5D2DC;
-    --grey-500: #BBB7C5;
-    --grey-600: #9691A4;
-    --grey-700: #666276;
-    --grey-800: #454056;
-    --grey-900: #1F1B2D;
-    /* Exemplo de uso: background-color: var(--grey-900); */
-    
-    /* Brand colors */
-    --primary: #FD5631;
-    --accent: #5D3CF2;
-    --gradient: linear-gradient(26.21deg, #5D3CF2 0%, #FD5631 108.88%);
-    --sucess: #07C98B;
-    --danger: #F23C49;
-    --warning: #FDBC31;
-    --info: #3C76F2;
-    /* Exemplo de uso: background: var(--gradient); */
-    
-    /* Shadow */
-    --small: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
-    --default: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
-    --large: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
-    /* Exemplo de uso: box-shadow: var(--gradient); */
+  /* Colors */
+  /* Grayscale */
+  --gray-100: #f9f8fa;
+  --gray-200: #f5f4f8;
+  --gray-300: #efecf3;
+  --grey-400: #d5d2dc;
+  --grey-500: #bbb7c5;
+  --grey-600: #9691a4;
+  --grey-700: #666276;
+  --grey-800: #454056;
+  --grey-900: #1f1b2d;
+  /* Exemplo de uso: background-color: var(--grey-900); */
+
+  /* Brand colors */
+  --primary: #fd5631;
+  --accent: #5d3cf2;
+  --gradient: linear-gradient(26.21deg, #5d3cf2 0%, #fd5631 108.88%);
+  --sucess: #07c98b;
+  --danger: #f23c49;
+  --warning: #fdbc31;
+  --info: #3c76f2;
+  /* Exemplo de uso: background: var(--gradient); */
+
+  /* Shadow */
+  --small: 0px 2px 2px -2px rgba(31, 27, 45, 0.08),
+    0px 4px 12px rgba(31, 27, 45, 0.08);
+  --default: 0px 2px 8px -4px rgba(31, 27, 45, 0.12),
+    0px 4px 16px rgba(31, 27, 45, 0.12);
+  --large: 0px 4px 12px -6px rgba(31, 27, 45, 0.2),
+    0px 8px 16px rgba(31, 27, 45, 0.16);
+  /* Exemplo de uso: box-shadow: var(--gradient); */
+}
+
+body {
+  background-color: var(--grey-900);
+  font-family: "Noto Sans", sans-serif;
+  max-width: 65vw !important;
+  margin: 0px auto;
+}
+
+.header {
+  color: var(--gray-200);
+}
+
+.navbar-car {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 2rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 150%;
+  opacity: 0.7;
+}
+
+.menu__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__right--sell,
+.menu__right--login {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.125rem;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: white;
+}
+
+.menu__right--sell {
+  background-color: var(--primary);
+}
+
+.menu__right--login {
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.container__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+.container__header--text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.89rem;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.container__header--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.69rem;
+  flex-basis: 40%;
+}
+
+.container__header--text p {
+  opacity: 0.7;
+  padding-right: 6rem;
+  text-align: left;
+}
+
+.container__header--img {
+  flex-grow: 1;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.container__header--img img {
+  max-width: 100%;
 }

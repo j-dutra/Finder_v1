@@ -1,18 +1,3 @@
-<!-- Início Otto
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>Webpack 4 Boilerplate</title>
-  </head>
-  <body>
-    <h1>Webpack 4 boilerplate</h1>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,43 +24,62 @@
   <meta name="keywords" content="desenvolvimento, html, css, javascript, ICarros Academy">
   <meta name="copyright" content="Desenvolvido por ICarros Academy" />
   <!-- OG Tags Google fim -->
+  <base href="/">
 
-  <link rel="shortcut icon" href="images/ico-finder.jpg">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="styles.css">
+
+  <script defer src="index.js"></script>
 
   <title>Car Finder | ICarros</title>
-	</head>
+</head>
 
 	<body>
-		<header>
+		<header class='header'>
 			<nav>
 				<div class="navbar-car">
-					<div class="logo-dark">
-						<img src="" alt="">
-					</div>
-	
+				
 					<div class="menu">
+						<div class="logo-dark">
+							<img src="" alt="">
+						</div>
 						<ul>
 							<li>Novos</li>
 							<li>Usados</li>
 							<li>Vender</li>
 							<li>Comprar</li>
-							<li>Noovidades e Reviws</li>
+							<li>Novidades e Reviews</li>
 						</ul>
 					</div>
 	
-					<div class="right">
-						<button>Entrar</button>
-						<button>+ Vender</button>
+					<div class="menu__right">
+						<button class="menu__right--login">Entrar</button>
+						<button class="menu__right--sell">+ Vender</button>
 					</div>
+				</div>	
 			</nav>
 
-			<h1>Compre e venda com facilidade. </h1>
+			<section class="container__header">
 
-			<p>
-				O Finder é um mercado digital líder para a indústria automotiva que conecta compradores de carros a vendedores.
-			</p>
+				<div class="container__header--text">
 
-			<img src="" alt="">
+					<h1>Compre e venda com facilidade. </h1>
+
+					<p>
+						O Finder é um mercado digital líder para a indústria automotiva que conecta compradores de carros a vendedores.
+					</p>
+
+				</div>
+				<div class="container__header--img">					
+					<img src="../img/orange-car.svg" alt="Carro laranja">
+			    </div>
+
+			</section>
+
+
+
+			
 		</header>
 
 		<main>
