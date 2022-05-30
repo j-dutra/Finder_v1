@@ -40,6 +40,23 @@
   --large: 0px 4px 12px -6px rgba(31, 27, 45, 0.2),
     0px 8px 16px rgba(31, 27, 45, 0.16);
   /* Exemplo de uso: box-shadow: var(--gradient); */
+
+    /* Typography */
+    /* Headings */
+    --heading-h1: 40px;
+    --heading-h2: 32px;
+    --heading-h3: 28px;
+    --heading-h4: 24px;
+    --heading-h5: 20px;
+    --heading-h6: 18px;
+
+    /* Display headings */
+    --display-1: 80px;
+    --display-2: 72px;
+    --display-3: 64px;
+    --display-4: 56px;
+    --display-5: 48px;
+    --display-6: 42px;
 }
 
 body {
