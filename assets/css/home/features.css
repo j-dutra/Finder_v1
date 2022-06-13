@@ -1,0 +1,95 @@
+.features {
+    width: 100%;
+    height: 52.4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 4.8rem 0;
+}
+
+.features h2 {
+    position: absolute;
+
+    width: 390px;
+    height: 36px;
+
+    /* Font*/
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+}
+
+.features > a {
+    width: 25.6rem;
+    height: 2.4rem;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.features-left {
+    width: 60.8rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-column-left {
+    width: 41.6rem;
+    height: 36.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* auto */
+.auto-road {
+    width: 8.0rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-right {
+    width: 60.8rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-column-right {
+    width: 41.6rem;
+    height: 36.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-right {
+    width: 416px;
+    height: 73px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    margin:  3.2rem 0;
+}
