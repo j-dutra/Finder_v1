@@ -1,0 +1,342 @@
+
+/*================= footer ==================*/
+
+footer {
+    width: 100%;
+    height: 45.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(0deg, rgba(69, 64, 86, 0.2), rgba(69, 64, 86, 0.2)), #1F1B2D;
+}
+
+/*=========== footer .footer-top =================*/
+
+.footer-top {
+    max-width: 129.6rem;
+    width: 100%;
+    height: 8.0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logodark */
+.logo-dark {
+    width: 11.6rem;
+    height: 3.2rem;
+}
+
+/* lang-location */
+.lang-location {
+    width: 20.1rem;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* lang */
+.lang {
+    width: 7.4rem;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang img {
+    margin-right: 0.8rem;
+}
+
+/* location */
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10.3rem;
+    height: 2.1rem;
+}
+
+.location img {
+    margin-right: 0.8rem;
+}
+
+/*=========== footer .divider =================*/
+
+.divider {
+
+    width: 100%;
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+}
+
+/*=========== footer .footer-information =================*/
+
+.footer-informations {
+    max-width: 129.6rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*=== .subscribe ===*/
+.subscribe {
+    width: 30.6rem;
+    height: 13.9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 5.6rem 0;
+}
+
+/* Cadastre-se na newsletter */
+.subscribe h2 {
+    width: 30.6rem;
+    height: 3.0rem;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 150%;
+}
+
+.subscribe p {
+    width: 24.7rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.7;
+}
+
+/* input-group */
+.input-group {
+    width: 30.6rem;
+    height: 5.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: .8rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* input */
+.input-group input {
+    width: 14.5rem;
+    height: 2.1rem;
+
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    opacity: 0.5;
+
+    border: none;
+
+    margin: 1.6rem;
+}
+
+/* btn */
+.input-group button {
+    width: 3.6rem;
+    height: auto;
+    background-color: transparent;
+
+    margin: .8rem;
+}
+
+/*=========== footer section ================*/
+
+.footer-informations section {
+    width: 16.0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 5.6rem 0;
+}
+
+.footer-informations section h3 {
+    height: 2.4rem;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    margin-bottom: 1.2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*=== .buy-sell ===*/
+.menu {
+    height: 121px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/*=== .about ===*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*=== profile ===*/
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*=== .contacts-social ===*/
+.contacts-social {
+    width: 18.0rem;
+    height: 12.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts {
+    width: 17.8rem;
+    height: 5.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contacts a {
+    display: flex;
+    align-items: center;
+
+    width: 133px;
+    height: 24px;
+}
+
+.contacts a img {
+    margin-right: .8rem;
+}
+
+#phone {
+    width: 13.3rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+
+    width: 17.8rem;
+    height: 2.4rem;
+}
+
+.social {
+    width: 15.2rem;
+    height: 3.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 3.2rem;
+}
+
+#messenger {
+    width: 5.4rem;
+    height: auto;
+}
+
+.social a {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*============= .footer-bottom ================== */
+
+.footer-bottom {
+    max-width: 129.6rem;
+    width: 100%;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+
+    margin-top: 4.8rem;
+}
+
+/* menu-secondary */
+.menu-secondary {
+    width: 29.5rem;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    opacity: 0.7;
+}
+
+.menu-secondary a {
+    display: flex;
+}
