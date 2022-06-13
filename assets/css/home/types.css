@@ -1,0 +1,80 @@
+/* Types */
+.types {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 129.6rem;
+    width: 100%;
+    height: 41.2rem;
+}
+
+/* types-top */
+.types .types-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+
+/* Mais procurados */
+.types h2 {
+    width: 23.2rem;
+    height: 3.6rem;
+
+    display: flex;
+    align-items: center;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 130%;
+}
+
+/* view-all */
+.types .view-all {
+    width: 10.0rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    opacity: 0.7;
+}
+
+/* Ver todos */
+.types .types-top .view-all p {
+    width: 7.2rem;
+    height: 2.4rem;
+
+    /* Font*/
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+.types .cards-line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.types .card-line2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.car-lines div a {
+    width: 24.0rem;
+    height: 16.0rem;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.car-lines div a:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
