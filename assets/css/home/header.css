@@ -1,0 +1,124 @@
+header {
+    max-width: 129.6rem;
+    width: 100%;
+    height: 77.3rem;
+}
+
+header .text-img {
+    margin-top: 12.0rem;
+    display: flex;
+}
+
+header .text-img  h1{
+    width: 52.6rem;
+    height: 14.6rem;
+    
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 130%;
+}
+
+header .text-img  p {
+    width: 41.6rem;
+    height: 8.1rem;
+
+    margin-top: 3.2rem;
+
+    /* large/regular */
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
+
+header .text-img #orange-car {
+    width: 74.6rem;
+    height: 41.6rem;
+}
+
+header .tabs {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 16.4rem;
+    height: 4.0rem;
+
+    margin-bottom: 2.4rem;
+}
+
+header .tabs button {
+    width: 7.2rem;
+    height: 4.0rem;
+    border-radius: .8rem;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+header .tabs #new {
+
+    width: 7.2rem;
+    background: #fff;
+
+    /* shadow/large */
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+
+    line-height: 150%;
+    color: #FD5631;
+}
+
+header .tabs #used {
+    width: 8.0rem;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* input-group */
+header .input-group {
+
+    width: 100%;
+    height: 6.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+header .input-group form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .input-group input {
+    width: 20.2rem;
+    margin: 0.8rem;
+    background-color: transparent;
+    border: none;
+}
+
+header .input-group #submit {
+    width: 14.2rem;
+    height: 5.2rem;
+    background: #FD5631;
+    border-radius: .8rem;
+    opacity: 1;
+}
+
+header .input-group #submit:hover {
+    opacity: 0.4;
+}
+
+
+
