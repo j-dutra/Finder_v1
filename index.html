@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- OG Tags global início -->
+		<!-- <meta property="og:site" content="https://html-icarros-academy.netlify.app/" /> -->
+		<meta property="og:site_name" content="Finder ICarros" />
+		<meta property="og:image" content="../images/ico-finder.jpg" />
+		<meta property="og:description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+		<!-- OG Tags global fim -->
+
+		<!-- OG Tags Twitter iniicio -->
+		<meta property="twitter:title" content="Finder ICarros"/>
+		<meta property="twitter:description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+		<meta property="twitter:image" content="../src/images/ico-finder.jpg" />
+		<!-- OG Tags Twitter fim -->
+		
+		<!-- OG Tags Google início -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+		<meta name="keywords" content="desenvolvimento, html, css, javascript, ICarros Academy">
+		<meta name="copyright" content="Desenvolvido por ICarros Academy" />
+		<!-- OG Tags Google fim -->
+
+        <!-- Import 'Noto Sans' font, light 300, Regular 400, and Bold 700 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- import style sheets, per sections -->
+        <link rel="stylesheet" href="./assets/css/home/reset.css">
+        <link rel="stylesheet" href="./assets/css/home/pattern.css">
+        <link rel="stylesheet" href="./assets/css/home/responsive.css">
+        <link rel="stylesheet" href="./assets/css/home/style.css">
+        <link rel="stylesheet" href="./assets/css/home/nav-bar.css">
+        <link rel="stylesheet" href="./assets/css/home/header.css">
+        <link rel="stylesheet" href="./assets/css/home/main.css">
+        <link rel="stylesheet" href="./assets/css/home/types.css">
+        <link rel="stylesheet" href="./assets/css/home/top-offers.css">
+        <link rel="stylesheet" href="./assets/css/home/logos.css">
+		<link rel="stylesheet" href="./assets/css/home/features.css">
+		<link rel="stylesheet" href="./assets/css/home/latest-cars.css">
+		<link rel="stylesheet" href="./assets/css/home/banner.css">
+		<link rel="stylesheet" href="./assets/css/home/app.css">
+		<link rel="stylesheet" href="./assets/css/home/blog.css">
+		<link rel="stylesheet" href="./assets/css/home/footer.css">
+
+        <title>Car Finder</title>
+        
+    </head>
+
+    <body>
+        <nav class="nav-bar">
+            <div class="logo-menu">
+                <div class="logo-dark">
+                    <img src="./assets/img/nav-bar/logo-dark.png" alt="logo car-finder">
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Novos</a>
+                        </li>
+
+                        <li>
+                            <a href="./assets/catalog.html">Usados</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Vender</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Comprar</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Novidades e Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <a href="#">
+                    <img src="./assets/img/nav-bar/user.png" alt="icone de login">
+                    <p>Entrar</p>
+                </a>
+                
+                <button>+ Vender</button>
+            </div>
+        </nav>
+
+        <header>
+            <div class="text-img">
+                <div class="h1-p">
+                    <h1>Compre e venda com facilidade. </h1>
+        
+                    <p>
+                        O Finder é um mercado digital líder para a indústria automotiva que conecta compradores de carros a vendedores.
+                    </p>
+                </div>
+    
+                <img id="orange-car" src="./assets/img/header/orange-car.png" alt="um carro laranja">
+            </div>
+
+            <div class="tabs">
+                <button id="new" >Novo</button>
+                <button id="used">Usado</button>
+            </div>
+
+			<section class="input-group">
+				<form>
+                    <input type="text"   id="search"   placeholder="Pesquisar por ...">
+                    <input type="text"   id="make"     placeholder="Marca">
+                    <input type="text"   id="model"    placeholder="Modelo">
+                    <input type="text"   id="type"     placeholder="Tipo">
+                    <input type="text"   id="location" placeholder="Local">
+                    <input type="submit" id="submit"   value="Pesquisar" >
+				</form>
+			</section>
+            
+		</header>
+
+        <main>
+            <section class="types">
+				<div class="types-top">
+					<h2>Mais procurados</h2>
+	
+					<div class="view-all">
+						<p>Ver todos</p>
+						<img class="arrow" src="./assets/img/types/arrow.svg" alt="arrow">
+					</div>
+				</div>
+
+				<div class="car-lines">
+					<div class="cards-line1">
+						<a href="">
+							<img src="./assets/img/types/sedan.png" alt="card sedan">
+							<p>Sedan</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/suv.png" alt="card suv">
+							<p>Suv</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/wagon.png" alt="card wagon">
+							<p>Wagnon</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/crossover.png" alt="card crossover">
+							<p>Crossover</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/coupe.png" alt="card coupe">
+							<p>Coupe</p>
+						</a>
+					</div>
+
+					<div class="card-line2">
+						<a href="">
+							<img src="./assets/img/types/pickup.png" alt="card pickup">
+							<p>Pickup</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/sport coupe.png" alt="card sport coupe">
+							<p>Sport Coupe</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/compact.png" alt="card compact">
+							<p>Compact</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/conversible.png" alt="card conversible">
+							<p>Convertible</p>
+						</a>
+
+						<a href="">
+							<img src="./assets/img/types/family mpv.png" alt="card family mpv">
+							<p>Family MPV</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+            <section class="top-offers">
+				<div class="top-offers-top">
+					<h2>Ofertas</h2>
+	
+					<div class="view-all">
+						<p>Veja todas as ofertas</p>
+						<img class="arrow" src="./assets/img/types/arrow.svg" alt="arrow">
+					</div>
+				</div>
+
+				<div class="top-offers-down">
+					<div class="card-vertical-left card-horizontal-hover">					
+						<img src="./assets/img/top-offers/white-car.png" alt="car">
+	
+						<div class="info">
+	
+						</div>
+					</div>
+	
+					<div class="cards-right">
+						<div class="card-horizontal-up card-horizontal-hover">
+							<img src="./assets/img/top-offers/green-car.png" alt="">
+						</div>
+	
+						<div class="card-horizontal-down card-horizontal-hover">
+							<img src="./assets/img/top-offers/blue-car.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section class="logos">
+				<a href="">
+					<img src="./assets/img/logos/opel-logo.svg" alt="logo opel">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/audi-logo.svg" alt="logo audi">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/mercedes-benz-logo.svg" alt="logo mercedes-bens">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/toyota-logo.svg" alt="logo toyota">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/mazda-logo.svg" alt="logo mazda">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/nissan-logo.svg" alt="nissan">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/hyundai-logo.svg" alt="logo hyundai">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/lexus-logo.svg" alt="logo lexus">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/honda-logo.svg" alt="logo honda">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/renault-logo.svg" alt="logo renault">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/infiniti-logo.svg" alt="logo infiniti">
+				</a>
+
+				<a href="">
+					<img src="./assets/img/logos/mitsubishi-logo.svg" alt="logo mitsubishi">
+				</a>
+			</section>
+
+			<section class="features">
+				<h2>O que temos de diferente</h2>
+				
+				<div class="features-left">
+					<div class="features-column-left">
+						<div class="features-left">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+
+						<div class="features-left">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+
+						<div class="features-left">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="auto-road">
+					<img src="./assets/img/features/auto.png" alt="">
+					<img src="./assets/img/features/road-line.svg" alt="">
+				</div>
+
+				<div class=".features-column-right">
+					<a href="#">
+						Como vender carros no Finder
+					</a>
+
+					<div class="features-column-right">
+						<div class="features-right">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+
+						<div class="features-right">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+
+						<div class="features-right">
+							<h3>Loren ipsun</h3>
+
+							<p>
+								That’s more than you’ll find on any other major online automotive marketplace in the USA.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="latest-car">
+				<!--
+				<div class="arrows"></div>
+				-->
+
+				<div class="midlle">
+					<div class="titles">
+						<div>
+							<h2>Ultimos publicados</h2>
+						</div>
+
+						<div class="tabs-link">
+							<div class="tabs">
+								<button id="novo">Novo</button>
+								<button id="usado">Usado</button>
+							</div>
+
+							<div class="latest-link">ver todos</div>
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="car-card" id="card1">
+							<img src="./assets/img/latest-cars/mazda.png" alt="">
+						</div>
+
+						<div class="car-card" id="card2">
+							<img src="./assets/img/latest-cars/bmw.png" alt="">
+						</div>
+
+						<div class="car-card" id="card3">
+							<img src="./assets/img/latest-cars/nissan.png" alt="">
+						</div>
+					</div>
+
+					<div class="dots">
+					</div>
+				</div>
+
+				<!--
+				<div class="arrows"></div>
+				-->
+			</section>
+
+			<section class="banner">
+				<div class="banner-top">
+					<div class="banner-top-right">
+						<h2>Loren ipsun</h2>
+						<p>Loren ipsun site amet</p>
+						<button>Ir para loja</button>
+					</div>
+
+					<div class="products">
+						<a href="#">
+							<img src="./assets/img/banners/bancos.png" alt="">
+							<p class="product-items">Bancos</p>
+						</a>
+
+						<a href="#">
+							<img src="./assets/img/banners/pneus.png" alt="">
+							<p class="product-items">Pneus</p>
+						</a>
+
+						<a href="#">
+							<img src="./assets/img/banners/rodas.png" alt="">
+							<p class="product-items">Rodas</p>
+						</a>
+
+						<a href="#">
+							<img src="./assets/img/banners/acessorios.png" alt="">
+							<p class="product-items">Acessorios</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="banner-bottom">
+
+				</div>
+			</section>
+
+			<section class="app">
+				<div class="apps">
+					<div>
+						<h2>Baixe o nosso app</h2>
+					</div>
+
+					<div>
+						<p>
+							Baixe o Finder App e junte-se à comunidade de entusiastas de carros. Não pare sua busca de carro quando sair do computador com nosso aplicativo para Android e iOS!
+						</p>
+					</div>
+
+					<div class="btns">
+						<a id="app-store" href="https://www.apple.com/br/app-store/" target="_blank">
+							<img src="./assets/img/apps/app-store.png" alt="">
+						</a>
+
+						<a id="google-play" href="https://play.google.com/" target="_blank">
+							<img src="./assets/img/apps/google-play.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="ilustration">
+					<img src="./assets/img/apps/illustration.png" alt="">
+
+				</div>
+
+			</section>
+			
+			<section class="blog">
+				<div class="blog-top">
+					<h2>Ultimas novidades</h2>
+					<a href="#">Go to blog</a>
+				</div>
+
+				<div class="blog-cards">
+					<div class="cards-blog">
+						<img src="./assets/img/blog/fusca.png" alt="">
+
+						<div class="title">
+							<h4>Dicas</h4>
+							<p>Loren ipsuns</p>
+						</div>
+
+						<div class="author">
+							<img src="./assets/img/blog/jacob.svg" alt="">
+
+							<div class="author-info">
+								<div class="author-name">
+									Jacob Jones
+								</div>
+								<img class="author-date" src="./assets/img/blog/date1.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-blog">
+						<img src="./assets/img/blog/traseira-carro.png" alt="">
+
+						<div class="title">
+							<h4>OFERTAS</h4>
+							<p>Loren ipsuns</p>
+						</div>
+
+						<div class="author">
+							<img src="./assets/img/blog/annette.svg" alt="">
+
+							<div class="author-info">
+								<div class="author-name">
+									Annette Black
+								</div>
+								<img class="author-date" src="./assets/img/blog/date2.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-blog">
+						<img src="./assets/img/blog/moto.png" alt="">
+
+						<div class="title">
+							<h4>OFERTAS</h4>
+							<p>Loren ipsuns</p>
+						</div>
+
+						<div class="author">
+							<img src="./assets/img/blog/ralph.svg" alt="">
+
+							<div class="author-info">
+								<div class="author-name">
+									Ralph Edwards
+								</div>
+								<img class="author-date" src="./assets/img/blog/date3.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+		<footer>
+			<div class="footer-top">
+				<div class="logo-dark">
+					<img src="./assets/img/footer/logo-finder.png" alt="" />
+				</div>
+
+				<div class="lang-location">
+					<div class="lang">
+						<img src="./assets/img/footer/world.svg" alt="" />
+						<p>pt-BR</p>
+					</div>
+
+					<div class="location">
+						<img src="./assets/img/footer/pin.svg" alt="" />
+						<p>São Paulo</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="footer-informations">
+				<div class="subscribe">
+					<h2>Cadastre-se na newletter</h2>
+					
+					<p>Não perca nenhuma oferta relevante!</p>
+
+					<div class="input-group">
+						<input type="text" placeholder="Informe seu email" />
+
+						<button>
+							<img src="./assets/img/footer/btn.svg" alt="icone enviar">
+						</button>	
+					</div>
+				</div>
+
+				<section class="buy-sell">
+					<h3>Comprar ou Vender</h3>
+
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="about">
+					<h3>Sobre</h3>
+
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="profile">
+					<h3>Perfil</h3>
+
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+
+							<li>
+								<a href="#">Loren ipsum</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="contacts-social">
+					<div class="contacts">
+						<a id="phone" href="fone:+551111111111">
+							<img src="./assets/img/footer/phone.svg" alt="icone telefone" />
+							(11) 1111-1111
+						</a>
+
+						<a id="email" href="mailto:email@example.com.br">
+							<img src="./assets/img/footer/mail.svg" alt="icone email" />
+							email@example.com.br
+						</a>
+					</div>
+
+					<div class="social">
+						<a id="facebook" href="#">
+							<img src="./assets/img/footer/facebook.svg" alt="logo facebook" />
+						</a>
+	
+						<a id="twitter" href="#">
+							<img src="./assets/img/footer/twitter.svg" alt="logo twitter" />
+						</a>
+	
+						<a id="telegram" href="#">
+							<img src="./assets/img/footer/telegram.svg" alt="logo telegram" />
+						</a>
+
+						<a id="telegram" href="#">
+							<img src="./assets/img/footer/messeger.png" alt="logo messeger" />
+						</a>
+
+					</div>
+				</section>
+			</div>
+
+			<div class="footer-bottom">
+				<p>
+					Copyright © Finder | Gama Academy. Todos os direitos reservados - Este é um projeto acadêmico.
+				</p>
+
+				<div class="menu-secondary">
+					<a href="#">Termos de uso</a>
+					<a href="#">Política de privacidade</a>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>
