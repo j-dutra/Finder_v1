@@ -24,7 +24,7 @@ body {
     align-items: center;
     background-color: var(--bg-color);
 
-    background-image: url('../img/header/shape.png');
+    background-image: url('../../img/header/shape.png');
     background-repeat: no-repeat;
     background-size: contain;
 }

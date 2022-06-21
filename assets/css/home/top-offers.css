@@ -93,6 +93,8 @@
 
 /* card-horizontal-up */
 .card-horizontal-up {
+    position: relative;
+
     width: 63.6rem;
     height: 23.9rem;
 
@@ -115,5 +117,23 @@
 
 .card-horizontal-hover:hover {
     border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px 2px;
+    width: 5.4rem;
+    height: 2.4rem;
+
+    background: #3C76F2;
+    border-radius: 6px;
+
+    left: 20px;
+    top: 20px;
+
 }
 
