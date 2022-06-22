@@ -76,36 +76,35 @@ header .tabs #used {
 }
 
 /* input-group */
-header .input-group {
-
-    width: 100%;
-    height: 6.8rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-}
 
 header .input-group form {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }
 
 header .input-group input {
-    width: 20.2rem;
-    margin: 0.8rem;
+    width: 19rem;
+    height: 6rem;
+    margin: 0 0.8rem;
     background-color: transparent;
     border: none;
+    padding-left: 25px;
+}
+
+header .input-group input#submit {
+    padding: 0;
 }
 
 header .input-group #submit {
@@ -120,5 +119,62 @@ header .input-group #submit:hover {
     opacity: 0.4;
 }
 
+header form .search-label::before{
+    content: " ";
+    width: 15px;
+    height: 60px;
+    display: inline-block;
+    background: url(/assets/img/home/header/search.svg);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    position: absolute;
+    background-position: center;
+}
 
+header form .make-label::before{
+    content: " ";
+    width: 15px;
+    height: 60px;
+    display: inline-block;
+    background: url(/assets/img/home/header/star.svg);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    position: absolute;
+    background-position: center;
+}
 
+header form .model-label::before{
+    content: " ";
+    width: 15px;
+    height: 60px;
+    display: inline-block;
+    background: url(/assets/img/home/header/list.svg);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    position: absolute;
+    background-position: center;
+}
+
+header form .type-label::before{
+    content: " ";
+    width: 15px;
+    height: 60px;
+    display: inline-block;
+    background: url(/assets/img/home/header/car.svg);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    position: absolute;
+    background-position: center;
+}
+
+header form .location-label::before{
+    content: " ";
+    width: 15px;
+    height: 60px;
+    display: inline-block;
+    background: url(/assets/img/home/header/pin.svg);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    position: absolute;
+    background-position: center;
+}
