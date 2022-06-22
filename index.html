@@ -223,7 +223,11 @@
 				</div>
 
 				<div class="top-offers-down">
-					<div class="card-vertical-left card-horizontal-hover">					
+					<div class="card-vertical-left card-horizontal-hover">
+						<div class="badge-used">
+							<p>Usado</p>
+						</div>
+
 						<img src="./assets/img/top-offers/white-car.png" alt="car">
 	
 						<div class="info">
@@ -233,14 +237,22 @@
 	
 					<div class="cards-right">
 						<div class="card-horizontal-up card-horizontal-hover">
-							<div class="badge">
+							<div class="badge-used">
 								<p>Usado</p>
+							</div>
+
+							<div class="heart">
+								<img src="./assets/img/top-offers/heart.svg" alt="icone favoritar">
 							</div>
 
 							<img src="./assets/img/top-offers/green-car.png" alt="">
 						</div>
 	
 						<div class="card-horizontal-down card-horizontal-hover">
+							<div class="badge-new">
+								<p>Novo</p>
+							</div>
+
 							<img src="./assets/img/top-offers/blue-car.png" alt="">
 						</div>
 					</div>
@@ -366,48 +378,175 @@
 				</div>
 			</section>
 
-			<section class="latest-car">
-				<!--
-				<div class="arrows"></div>
-				-->
-
-				<div class="midlle">
-					<div class="titles">
-						<div>
-							<h2>Ultimos publicados</h2>
-						</div>
-
-						<div class="tabs-link">
-							<div class="tabs">
-								<button id="novo">Novo</button>
-								<button id="usado">Usado</button>
+			<section class="latest">
+				<div class="lattest__div-right">
+					<img src="./assets/img/latest-cars/previous.svg" alt="">
+				</div>
+	
+				<div class="latest__div-midlle">
+					<div class="latest__top">
+						<h2 class="latest__top__h2">Ultimos publicados</h2>
+	
+						<div class="latest__top__tabsLink">
+							<div class="latest__top__tabs">
+								<button class="top__tabs__new">Novo</button>
+								<button class="top__tabs__used">Usado</button>
 							</div>
-
-							<div class="latest-link">ver todos</div>
+	
+							<div class="latest__top__link">
+								<p>Ver todos</p>
+								<img src="./assets/img/latest-cars/arrow.svg" alt="">
+							</div>
 						</div>
 					</div>
-
-					<div class="cards">
-						<div class="car-card" id="card1">
-							<img src="./assets/img/latest-cars/mazda.png" alt="">
+	
+					<div class="latest__cards">
+						<div class="latest__cards__items">
+							<div class="latest__badge-new">
+								<p>Novo</p>
+							</div>
+	
+							<img src="./assets/img/latest-cars/mazda.png" alt="" />
+	
+							<div class="latest__items__info">
+								<div class="latest__car__info">
+									<p class="latest__car__year">2019</p>
+									<p class="latest__car__name">Mazda MX-5 Miata Convertible</p>
+									<p class="latest__car__price">$38,500</p>
+	
+									<div class="latest__car__location">
+										<img src="./assets/img/latest-cars/pin.svg" alt="" />
+										<p>Los Angeles</p>
+									</div>
+								</div>
+	
+								<div class="latest__items__compare">
+									<input type="checkbox" />
+									<p>Compare</p>
+								</div>
+							</div>
+	
+							<div class="latest__divider"></div>
+	
+							<div class="latest__meta">
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+									<p>18K mi</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+									<p>Manual</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+									<p>Petrol</p>
+								</div>
+							</div>
 						</div>
-
-						<div class="car-card" id="card2">
-							<img src="./assets/img/latest-cars/bmw.png" alt="">
+	
+						<div class="latest__cards__items">
+							<div class="latest__badge-used">
+								<p>Usado</p>
+							</div>
+	
+							<img src="./assets/img/latest-cars/bmw.png" alt="" />
+	
+							<div class="latest__items__info">
+								<div class="latest__car__info">
+									<p class="latest__car__year">2019</p>
+									<p class="latest__car__name">BMW 640 XI Gran Turismo </p>
+									<p class="latest__car__price">$44,920</p>
+	
+									<div class="latest__car__location">
+										<img src="./assets/img/latest-cars/pin.svg" alt="" />
+										<p>New Jersey</p>
+									</div>
+								</div>
+	
+								<div class="latest__items__compare">
+									<input type="checkbox" />
+									<p>Compare</p>
+								</div>
+							</div>
+	
+							<div class="latest__divider"></div>
+	
+							<div class="latest__meta">
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+									<p>10K mi</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+									<p>Automatic</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+									<p>Gasoline</p>
+								</div>
+							</div>
 						</div>
-
-						<div class="car-card" id="card3">
-							<img src="./assets/img/latest-cars/nissan.png" alt="">
+	
+						<div class="latest__cards__items">
+							<div class="latest__badge-used">
+								<p>Novo</p>
+							</div>
+	
+							<img src="./assets/img/latest-cars/nissan.png" alt="" />
+	
+							<div class="latest__items__info">
+								<div class="latest__car__info">
+									<p class="latest__car__year">2019</p>
+									<p class="latest__car__name">Nissan 370Z Nismo</p>
+									<p class="latest__car__price">$37,900</p>
+	
+									<div class="latest__car__location">
+										<img src="./assets/img/latest-cars/pin.svg" alt="" />
+										<p>New York</p>
+									</div>
+								</div>
+	
+								<div class="latest__items__compare">
+									<input type="checkbox" />
+									<p>Compare</p>
+								</div>
+							</div>
+	
+							<div class="latest__divider"></div>
+	
+							<div class="latest__meta">
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+									<p>16K mi</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+									<p>Automatic</p>
+								</div>
+	
+								<div class="latest__meta__item">
+									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+									<p>Diesel</p>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<div class="dots">
+	
+					<div class="latest__bottom">
+						<span class="latest__bottom-rigth"></span>
+						<span class="latest__bottom-middle"></span>
+						<span class="latest__bottom-left"></span>
 					</div>
 				</div>
-
-				<!--
-				<div class="arrows"></div>
-				-->
+	
+				<div class="lattest__div-left">
+					<img src="./assets/img/latest-cars/next.svg" alt="">
+				</div>
 			</section>
 
 			<section class="banner">

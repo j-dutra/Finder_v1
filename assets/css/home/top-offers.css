@@ -62,6 +62,8 @@
 
 /* car-card/vertical */
 .top-offers .card-vertical-left {
+    position: relative;
+
     width: 63.6rem;
     height: 50.2rem;
 
@@ -106,6 +108,8 @@
 
 /* card-horizontal-down */
 .card-horizontal-down {
+    position: relative;
+
     width: 636px;
     height: 239px;
 
@@ -119,21 +123,57 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.badge {
+.badge-used {
     position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1px 10px 2px;
-    width: 5.4rem;
-    height: 2.4rem;
+    padding: .1rem 1.0rem .2rem;
 
     background: #3C76F2;
-    border-radius: 6px;
+    border-radius: .6rem;
+}
 
-    left: 20px;
-    top: 20px;
+.badge-new {
+    position: absolute;
 
+    width: 5.0rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #FDBC31;
+    border-radius: .6rem;
+}
+
+.heart {
+    position: absolute;
+
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 2.0rem;
+    left: 20.8rem;
+
+    background-color: #FFF;
+    border-radius: 4.0rem;
+}
+
+.heart img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+
+    margin: 8px;
 }
 
