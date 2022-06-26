@@ -95,10 +95,30 @@ header .input-group {
 }
 
 header .input-group form {
-    width: 100%;
+    width:100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding-left: 2.0rem;
+}
+
+header label {
+    opacity: 0.5;
+}
+
+header label img {
+    width: 2.0rem;
+    height: 2.0rem;
+}
+
+.header__input-group__divider {
+    width: 40px;
+    height: 0px;
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);    
 }
 
 header .input-group input {
