@@ -1,129 +1,256 @@
-/* Top-offers */
-
-.top-offers {
+.offers {
     width: 100%;
-    height: 57.0rem;
+    height: 57.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     margin: 4.8rem 0;
 }
 
-.top-offers-top {
+.offers__title-link {
+    width: 100%;
+    height: 3.6rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers__title-link h2 {
+    width: 106px;
+    height: 36px;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 130%;
+}
+
+.offers__link {
+    width: 18.3rem;
+    height: 2.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
+
+.offers__cards {
     width: 100%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-bottom: 3.2rem;
 }
 
-/* Ofertas */
-.top-offers-top h2 {
-    width: 10.6rem;
-    height: 3.6px;
-
-    font-weight: 700;
-    font-size: 2.8rem;
-    line-height: 130%;
-
-    display: flex;
-    align-items: center;
-}
-
-/* Ofertas */
-.top-section h2 {
-    width: 10.6rem;
-    height: 3.6rem;
-
-    font-weight: 700;
-    font-size: 2.8rem;
-    line-height: 130%;
-
-    display: flex;
-    align-items: center;
-}
-
-.top-offers-top .view-all {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 13.3rem;
-    height: 2.4rem;
-
-    opacity: 0.7;
-}
-
-/* top-offers-down */
-.top-offers-down {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* car-card/vertical */
-.top-offers .card-vertical-left {
+.offers__cards-vertical {
     position: relative;
 
     width: 63.6rem;
     height: 50.2rem;
 
-    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     background: rgba(255, 255, 255, 0.04);
     box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
+    border-radius: 1.2rem;
 }
 
-.top-offers .card-vertical-left img {
+.offers__cards-vertical img{
     border-radius: 1.2rem 1.2rem 0 0;
 }
 
-/* cards-left*/
-.top-offers .cards-right {
-    width: 63.6rem;
+.offers__car-info-compare {
+    width: 59.6rem;
+    height: 10.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.offers__car-info {
+    width: 30.5rem;
+    height: 10.5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.offers__car__year {
+    width: 3.3rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.offers__car__name {
+    width: 100%;
+    height: 2.7rem;
+
+    /* Font */;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
+
+.offers__car__price {
+    width: 100%;
+    height: 2.4rem;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    color: #FD5631;
+}
+
+.offers__car__location {
+    display: flex;;
     align-items: center;
 
-    border-radius: 1.2rem;
+    width: 10.1rem;
+    height: 2.1rem;
 }
 
-.top-offers .cards-right img {
-    border-radius: .8rem  0 0 .8rem;
+.offers__car__location p {
+    width: 7.9rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    opacity: 0.7;
 }
 
-/* card-horizontal-up */
-.card-horizontal-up {
-    position: relative;
+.offers__car-compare {
+    width: 8.3rem;
+    height: 2.1rem;
 
-    width: 63.6rem;
-    height: 23.9rem;
-
-    border-radius: 1.2rem;
-    background: rgba(255, 255, 255, 0.04);
-
-    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* card-horizontal-down */
-.card-horizontal-down {
-    position: relative;
-
-    width: 636px;
-    height: 239px;
-
-    border-radius: 1.2rem;
-    background: rgba(255, 255, 255, 0.04);
-
-    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+.offers__car-compare input {
+    display: none;
 }
 
-.card-horizontal-hover:hover {
-    border: 1px solid rgba(255, 255, 255, 0.15);
+.offers__car-compare label {
+    display: flex;
+    align-items: center;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
 }
 
-.badge-used {
+.offers__car-compare input + label:before {
+    content: '';
+    width:1.3rem;
+    height: 1.3rem;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .2rem;
+    margin-right: .7rem;
+}
+
+.offers__car-compare input:checked + label:before {
+    background-color: white;
+    opacity: 0.7;
+}
+
+.offers__divider {
+    width: 59.6rem;
+
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+}
+
+.offers__vertical-meta {
+    width: 59.4rem;
+    height: 6.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2.0rem;
+}
+
+.offers__meta__itens {
+    width: 19.0rem;
+    height: 6.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #1F1B2D;
+    opacity: 0.5;
+    border-radius: .8rem;    
+}
+
+.offers__vertical-meta div img{
+    width: 2.4rem;
+    height: 2.4rem;
+
+    margin-bottom: .8rem;
+}
+
+.offers__vertical-meta div p{
+    width: 100%;
+    height: 1.8rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.offers__badge-new {
+    position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #FDBC31;;
+    border-radius: .6rem;
+}
+
+.offers__badge-used {
     position: absolute;
 
     width: 5.4rem;
@@ -140,40 +267,91 @@
     border-radius: .6rem;
 }
 
-.badge-new {
-    position: absolute;
-
-    width: 5.0rem;
-    height: 2.4rem;
-    left: 2.0rem;
-    top: 2.0rem;
+.offers__cards-horizontal {
+    width: 63.6rem;
+    height: 50.2rem;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards__horizontal {
+    position: relative;
+
+    width: 63.6rem;
+    height: 23.9rem;
+
+    display: flex;
+    
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+    border-radius: 1.2rem;
+}
+
+.cards__horizontal img {
+    border-radius: 1.2rem  0 0 1.2rem;
+}
+
+.horizontal__card__info {
+    width: 37.6rem;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: .1rem 1.0rem .2rem;
+    justify-content: space-between;
 
-    background: #FDBC31;
-    border-radius: .6rem;
+    padding: 2.0rem;
 }
 
-.heart {
-    position: absolute;
+.card-horizontal__info-compare {
+    width: 100%;
+    height: 10.5rem;
 
-    width: 3.2rem;
-    height: 3.2rem;
-    top: 2.0rem;
-    left: 20.8rem;
-
-    background-color: #FFF;
-    border-radius: 4.0rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.heart img {
-    position: absolute;
-    width: 16px;
-    height: 16px;
+.card-horizontal__info {
+    width: 100%;
+    height: 10.5rem;
 
-    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+.card-horizontal__divider {
+    width: 100%;
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+}
+
+.card-horizontal__meta {
+    width: 100%;
+    height: 6.2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.horizontal__meta__itens {
+    width: 10.4rem;
+    height: 6.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #1F1B2D;
+    opacity: 0.5;
+    border-radius: .8rem;
+}
+
+.offers__cards-hover:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+}
