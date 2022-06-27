@@ -96,6 +96,11 @@
     margin-bottom: 7.8rem;
 }
 
+.features__column-right a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .column-right {
     width: 41.6rem;
     height: 36.8rem;

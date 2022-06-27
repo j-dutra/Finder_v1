@@ -42,6 +42,11 @@
     opacity: 0.7;
 }
 
+.types .view-all:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 /* Ver todos */
 .types .types-top .view-all p {
     width: 7.2rem;
@@ -58,7 +63,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
- 
 }
 
 .types .card-line2 {

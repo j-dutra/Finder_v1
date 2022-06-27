@@ -1,7 +1,7 @@
 header {
     max-width: 129.6rem;
     width: 100%;
-    height: 77.3rem;
+    height: 70.3rem;
 }
 
 header .text-img {
@@ -59,20 +59,30 @@ header .tabs button {
 }
 
 header .tabs #new {
-
     width: 7.2rem;
-    background: #fff;
+
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
 
     /* shadow/large */
     box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
 
     line-height: 150%;
+}
+
+header .tabs #new:hover {
     color: #FD5631;
+    background: #fff;
 }
 
 header .tabs #used {
     width: 8.0rem;
     background: rgba(255, 255, 255, 0.04);
+}
+
+header .tabs #used:hover {
+    background: #fff;
+    color: #FD5631;
 }
 
 /* input-group */
@@ -104,15 +114,6 @@ header .input-group form {
     padding-left: 2.0rem;
 }
 
-header label {
-    opacity: 0.5;
-}
-
-header label img {
-    width: 2.0rem;
-    height: 2.0rem;
-}
-
 .header__input-group__divider {
     width: 40px;
     height: 0px;
@@ -122,7 +123,7 @@ header label img {
 }
 
 header .input-group input {
-    width: 20.2rem;
+    width: 16.2rem;
     margin: 0.8rem;
     background-color: transparent;
     border: none;
@@ -136,9 +137,10 @@ header .input-group #submit {
     opacity: 1;
 }
 
+header .input-group img {
+    opacity: 0.5;
+}
+
 header .input-group #submit:hover {
     opacity: 0.4;
 }
-
-
-

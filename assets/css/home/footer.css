@@ -142,9 +142,14 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.input-group label {
+    margin: 0 0 0 1.6rem;
+    opacity: 0.7;
+}
+
 /* input */
 .input-group input {
-    width: 14.5rem;
+    width: 19.5rem;
     height: 2.1rem;
 
     display: flex;
@@ -154,8 +159,7 @@ footer {
     opacity: 0.5;
 
     border: none;
-
-    margin: 1.6rem;
+    margin-left: .6rem;
 }
 
 /* btn */
@@ -214,6 +218,11 @@ footer {
     line-height: 150%;
 }
 
+.buy-sell a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
 /*=== .about ===*/
 .about {
     display: flex;
@@ -222,12 +231,22 @@ footer {
     align-items: flex-start;
 }
 
+.about a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
 /*=== profile ===*/
 .profile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.profile a:hover {
+    color: white;
+    opacity: 0.5;
 }
 
 /*=== .contacts-social ===*/
@@ -289,20 +308,56 @@ footer {
     margin-top: 3.2rem;
 }
 
-#messenger {
-    width: 5.4rem;
-    height: auto;
-}
-
-.social a {
+.social-item {
     width: 3.2rem;
     height: 3.2rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;
+
+    background: #2E2A3C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.4rem 1.4rem
 }
 
+.social-item:hover {
+    background: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.4rem 1.4rem;
+}
+
+#facebook {
+    background-image: url(../../img/footer/facebook.svg);
+}
+
+#facebook:hover {
+    background-image: url(../../img/footer/facebook-hover.svg);
+}
+
+#twitter {
+    background-image: url(../../img/footer/twitter.svg);
+}
+
+#twitter:hover {
+    background-image: url(../../img/footer/twitter-hover.svg);
+}
+
+#telegram {
+    background-image: url(../../img/footer/telegram.svg);
+}
+
+#telegram:hover {
+    background-image: url(../../img/footer/telegram-hover.svg);
+}
+
+#messenger {
+    background-image: url(../../img/footer/messenger.svg);
+}
+
+#messenger:hover {
+    background-image: url(../../img/footer/messenger-hover.svg);
+}
 
 /*============= .footer-bottom ================== */
 

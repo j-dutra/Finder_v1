@@ -28,7 +28,7 @@
 }
 
 .blog-top a {
-    width: 7.9rem;
+    width: 12.9rem;
     height: 2.4rem;
 
     font-weight: 400;
@@ -37,7 +37,14 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-align: right;
+
+    opacity: 0.7;
+}
+
+.blog-top a:hover {
+    opacity: 0.5;
 }
 
 .blog-cards {

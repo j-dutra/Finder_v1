@@ -133,55 +133,43 @@
 
 			<section class="input-group">
 				<form>
-					<label for="">
-						<img src="./assets/img/header/search.svg" alt="">
-					</label>
+					<img src="./assets/img/header/search.svg" alt="">
                     <input type="text"   id="search"   placeholder="Pesquisar por ...">
 
 					<div class="header__input-group__divider"></div>
 
-					<label for="">
-						<img src="./assets/img/header/star.svg" alt="">
-					</label>
+					<img src="./assets/img/header/star.svg" alt="">
                     <input type="text"   id="make"     placeholder="Marca">
 
 					<div class="header__input-group__divider"></div>
 
-					<label for="">
-						<img src="./assets/img/header/list.svg" alt="">
-					</label>
+					<img src="./assets/img/header/list.svg" alt="">
                     <input type="text"   id="model"    placeholder="Modelo">
 
 					<div class="header__input-group__divider"></div>
 
-					<label for="">
-						<img src="./assets/img/header/car.svg" alt="">
-					</label>
+					<img src="./assets/img/header/car.svg" alt="">
                     <input type="text"   id="type"     placeholder="Tipo">
 
 					<div class="header__input-group__divider"></div>
 
-					<label for="">
-						<img src="./assets/img/header/pin.svg" alt="">
-					</label>
+					<img src="./assets/img/header/pin.svg" alt="">
                     <input type="text"   id="location" placeholder="Local">
 
-					</label>
                     <input type="submit" id="submit"   value="Pesquisar" >
 				</form>
 			</section>
-            
 		</header>
 
         <main>
             <section class="types">
 				<div class="types-top">
 					<h2>Mais procurados</h2>
-	
-					<div class="view-all">
+
+					<a href="#" class="view-all">
 						<p>Ver todos</p>
 						<img class="arrow" src="./assets/img/types/arrow.svg" alt="arrow">
-					</div>
+					</a>
 				</div>
 
 				<div class="car-lines">
@@ -782,7 +770,10 @@
 			<section class="blog">
 				<div class="blog-top">
 					<h2>Ultimas novidades</h2>
-					<a href="#">Go to blog</a>
+					<a href="#">
+						Ir para o blog
+						<img src="/assets/img/blog/arrow.svg" alt="">
+					</a>
 				</div>
 
 				<div class="blog-cards">
@@ -877,7 +868,10 @@
 					<p>Não perca nenhuma oferta relevante!</p>
 
 					<div class="input-group">
-						<input type="text" placeholder="Informe seu email" />
+						<label for="send-email">
+							<img src="/assets/img/footer/email-input.svg" alt="">
+						</label>
+						<input id="send-email" type="text" placeholder="Informe seu email" />
 
 						<button>
 							<img src="./assets/img/footer/btn.svg" alt="icone enviar">
@@ -979,22 +973,17 @@
 					</div>
 
 					<div class="social">
-						<a id="facebook" href="#">
-							<img src="./assets/img/footer/facebook.svg" alt="logo facebook" />
+						<a id="facebook" class="social-item" href="#">
 						</a>
 	
-						<a id="twitter" href="#">
-							<img src="./assets/img/footer/twitter.svg" alt="logo twitter" />
+						<a id="twitter" class="social-item" href="#">
 						</a>
 	
-						<a id="telegram" href="#">
-							<img src="./assets/img/footer/telegram.svg" alt="logo telegram" />
+						<a id="telegram" class="social-item" href="#">
 						</a>
 
-						<a id="telegram" href="#">
-							<img src="./assets/img/footer/messeger.png" alt="logo messeger" />
+						<a id="messenger" class="social-item"  href="#">
 						</a>
-
 					</div>
 				</section>
 			</div>

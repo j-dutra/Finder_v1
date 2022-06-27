@@ -63,6 +63,10 @@ nav .logo-menu .menu ul li {
     margin: 1.6rem;
 }
 
+nav .logo-menu .menu ul li a:hover {
+    opacity: 0.5;
+}
+
 /* right */
 nav .right {
     display: flex;
