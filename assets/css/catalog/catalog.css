@@ -5,6 +5,229 @@
     height: 206.8rem;
 
     margin-bottom: 8.0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.catalog__cards__items {
+    position: relative;
+    width: 47.1rem;
+    height: 48.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1.2rem;
+
+    padding-bottom: 20px;
+}
+
+.catalog__badge-new {
+    position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #FDBC31;;
+    border-radius: .6rem;
+}
+
+.catalog__badge-used {
+    position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #3C76F2;
+    border-radius: .6rem;
+}
+
+.catalog__cards__items:hover {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.catalog__cards__items img {
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.catalog__items__info {
+    width: 37.5rem;
+    height: 10.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__car__info {
+    width: 27.5rem;
+    height: 10.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.catalog__car__year {
+    width: 3.3rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.catalog__car__name {
+    width: 27.5rem;
+    height: 2.7rem;
+
+    /* Font */;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
+
+.catalog__car__price {
+    width: 6.0rem;
+    height: 2.4rem;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    color: #FD5631;
+}
+
+.catalog__car__location {
+    display: flex;;
+    align-items: center;
+    gap: 4px;
+
+    width: 10.1rem;
+    height: 2.1rem;
+}
+
+.catalog__car__location p {
+    width: 7.9rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    opacity: 0.7;
+}
+
+.catalog__items__compare {
+    width: 8.3rem;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__items__compare input {
+    display: none;
+}
+
+.catalog__items__compare label {
+    display: flex;
+    align-items: center;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.catalog__items__compare input + label:before {
+    content: '';
+    width:1.3rem;
+    height: 1.3rem;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .2rem;
+    margin-right: .7rem;
+}
+
+.catalog__items__compare input:checked + label:before {
+    background-color: white;
+    opacity: 0.7;
+}
+
+
+.catalog__divider {
+    width: 43.1rem;
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+}
+
+.catalog__meta {
+    width: 43.1rem;
+    height: 6.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__meta__item {
+    width: 13.6rem;
+    height: 6.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #1F1B2D;
+    opacity: 0.5;
+    border-radius: .8rem;
+}
+
+.catalog__meta__item p {
+    height: 1.8rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.catalog__bottom {
+    width: 8.0rem;
+    height: .6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

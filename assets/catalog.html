@@ -1,297 +1,663 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- OG Tags global início -->
-		<!-- <meta property="og:site" content="https://html-icarros-academy.netlify.app/" /> -->
-		<meta property="og:site_name" content="Finder ICarros" />
-		<meta property="og:image" content="../images/ico-finder.jpg" />
-		<meta property="og:description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
-		<!-- OG Tags global fim -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- OG Tags Twitter iniicio -->
-		<meta property="twitter:title" content="Finder ICarros"/>
-		<meta property="twitter:description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
-		<meta property="twitter:image" content="../src/images/ico-finder.jpg" />
-		<!-- OG Tags Twitter fim -->
-		
-		<!-- OG Tags Google início -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
-		<meta name="keywords" content="desenvolvimento, html, css, javascript, ICarros Academy">
-		<meta name="copyright" content="Desenvolvido por ICarros Academy" />
-		<!-- OG Tags Google fim -->
+	<!-- OG Tags global início -->
+	<!-- <meta property="og:site" content="https://html-icarros-academy.netlify.app/" /> -->
+	<meta property="og:site_name" content="Finder ICarros" />
+	<meta property="og:image" content="../images/ico-finder.jpg" />
+	<meta property="og:description"
+		content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+	<!-- OG Tags global fim -->
 
-        <!-- Import 'Noto Sans' font, light 300, Regular 400, and Bold 700 -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- OG Tags Twitter iniicio -->
+	<meta property="twitter:title" content="Finder ICarros" />
+	<meta property="twitter:description"
+		content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+	<meta property="twitter:image" content="../src/images/ico-finder.jpg" />
+	<!-- OG Tags Twitter fim -->
 
-        <!-- import style sheets, per sections -->
-        <link rel="stylesheet" href="./css/home/reset.css">
-        <link rel="stylesheet" href="./css/home/pattern.css">
-        <link rel="stylesheet" href="./css/home/responsive.css">
-        <link rel="stylesheet" href="./css/home/style.css">
-        <link rel="stylesheet" href="./css/home/nav-bar.css">
-        <link rel="stylesheet" href="./css/catalog/main.css">
-        <link rel="stylesheet" href="./css/catalog/aside.css">
-        <link rel="stylesheet" href="./css/catalog/header.css">
-        <link rel="stylesheet" href="./css/catalog/catalog.css">
-		<link rel="stylesheet" href="./css/home/footer.css">
+	<!-- OG Tags Google início -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Finder, a plataforma de compras e vendas de carros do ICarros. Saiba mais!" />
+	<meta name="keywords" content="desenvolvimento, html, css, javascript, ICarros Academy">
+	<meta name="copyright" content="Desenvolvido por ICarros Academy" />
+	<!-- OG Tags Google fim -->
 
-        <title>Car Finder</title>
-        
-    </head>
+	<!-- Import 'Noto Sans' font, light 300, Regular 400, and Bold 700 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <body>
-        <nav class="nav-bar">
-            <div class="logo-menu">
-                <div class="logo-dark">
-                    <img src="./img/nav-bar/logo-dark.png" alt="logo car-finder">
-                </div>
+	<!-- import style sheets, per sections -->
+	<link rel="stylesheet" href="./css/home/reset.css">
+	<link rel="stylesheet" href="./css/home/pattern.css">
+	<link rel="stylesheet" href="./css/home/responsive.css">
+	<link rel="stylesheet" href="./css/home/style.css">
+	<link rel="stylesheet" href="./css/home/nav-bar.css">
+	<link rel="stylesheet" href="./css/catalog/main.css">
+	<link rel="stylesheet" href="./css/catalog/aside.css">
+	<link rel="stylesheet" href="./css/catalog/header.css">
+	<link rel="stylesheet" href="./css/catalog/catalog.css">
+	<link rel="stylesheet" href="./css/home/footer.css">
 
-                <div class="divider"></div>
+	<title>Car Finder</title>
 
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Novos</a>
-                        </li>
+</head>
 
-                        <li>
-                            <a href="#">Usados</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Vender</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Comprar</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Novidades e Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="right">
-                <a href="#">
-                    <img src="./img/nav-bar/user.png" alt="icone de login">
-                    <p>Entrar</p>
-                </a>
-                
-                <button>+ Vender</button>
-            </div>
-        </nav>
-
-        <main>
-            <aside></aside>
-
-            <div class="container">
-                <header>
-                    <div class="breadcrumb">
-                        <a href="../index.html">Home</a>
-                        <img src="" alt="">
-                        <a href="#">Carros Usados</a>
-                    </div>
-
-                    <div class="catalog-title">
-                        <h2>Carros usados</h2>
-
-                        <div class="num-offers">
-                            <img src="" alt="">
-                            <span>249 offers</span>
-                        </div>
-                    </div>
-                    
-                    <div class="">
-                        <div class="sorting-compare">
-                            <form>
-                                <p>Ordenar por: </p>
-                                <input type="text" placeholder="Mais novo">
-                                <button id="header-button">Compart (0)</button>
-                            </form>
-                        </div>
-
-                        <div class="header-views"></div>
-                    </div>
-                </header>
-    
-                <section class="catalog"></section>
-            </div>
-        </main>
-
-		<footer>
-			<div class="footer-top">
-				<div class="logo-dark">
-					<img src="./img/footer/logo-finder.png" alt="" />
-				</div>
-
-				<div class="lang-location">
-					<div class="lang">
-						<img src="./img/footer/world.svg" alt="" />
-						<p>pt-BR</p>
-					</div>
-
-					<div class="location">
-						<img src="./img/footer/pin.svg" alt="" />
-						<p>São Paulo</p>
-					</div>
-				</div>
+<body>
+	<nav class="nav-bar">
+		<div class="logo-menu">
+			<div class="logo-dark">
+				<img src="./img/nav-bar/logo-dark.png" alt="logo car-finder">
 			</div>
 
 			<div class="divider"></div>
 
-			<div class="footer-informations">
-				<div class="subscribe">
-					<h2>Cadastre-se na newletter</h2>
-					
-					<p>Não perca nenhuma oferta relevante!</p>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#">Novos</a>
+					</li>
 
-					<div class="input-group">
-						<input type="text" placeholder="Informe seu email" />
+					<li>
+						<a href="#">Usados</a>
+					</li>
 
-						<button>
-							<img src="./img/footer/btn.svg" alt="icone enviar">
-						</button>	
+					<li>
+						<a href="#">Vender</a>
+					</li>
+
+					<li>
+						<a href="#">Comprar</a>
+					</li>
+
+					<li>
+						<a href="#">Novidades e Reviews</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="right">
+			<a href="#">
+				<img src="./img/nav-bar/user.png" alt="icone de login">
+				<p>Entrar</p>
+			</a>
+
+			<button>+ Vender</button>
+		</div>
+	</nav>
+
+	<main>
+		<aside></aside>
+
+		<div class="container">
+			<header>
+				<div class="breadcrumb">
+					<a href="../index.html">Home</a>
+					<img src="" alt="">
+					<a href="#">Carros Usados</a>
+				</div>
+
+				<div class="catalog-title">
+					<h2>Carros usados</h2>
+
+					<div class="num-offers">
+						<img src="" alt="">
+						<span>249 offers</span>
 					</div>
 				</div>
 
-				<section class="buy-sell">
-					<h3>Comprar ou Vender</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="about">
-					<h3>Sobre</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="profile">
-					<h3>Perfil</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="contacts-social">
-					<div class="contacts">
-						<a id="phone" href="fone:+551111111111">
-							<img src="./img/footer/phone.svg" alt="icone telefone" />
-							(11) 1111-1111
-						</a>
-
-						<a id="email" href="mailto:email@example.com.br">
-							<img src="./img/footer/mail.svg" alt="icone email" />
-							email@example.com.br
-						</a>
+				<div class="">
+					<div class="sorting-compare">
+						<form>
+							<p>Ordenar por: </p>
+							<input type="text" placeholder="Mais novo">
+							<button id="header-button">Compart (0)</button>
+						</form>
 					</div>
 
-					<div class="social">
-						<a id="facebook" href="#">
-							<img src="./img/footer/facebook.svg" alt="logo facebook" />
-						</a>
-	
-						<a id="twitter" href="#">
-							<img src="./img/footer/twitter.svg" alt="logo twitter" />
-						</a>
-	
-						<a id="telegram" href="#">
-							<img src="./img/footer/telegram.svg" alt="logo telegram" />
-						</a>
+					<div class="header-views"></div>
+				</div>
+			</header>
 
-						<a id="telegram" href="#">
-							<img src="./img/footer/messeger.png" alt="logo messeger" />
-						</a>
+			<section class="catalog">
 
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-used">
+						<p>Usado</p>
 					</div>
-				</section>
+
+					<img src="./img/catalog/ford-truck.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">1995</p>
+							<p class="catalog__car__name">Ford Truck Lifted</p>
+							<p class="catalog__car__price">$24,000</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>Chicago</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>278K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Manual</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Diesel</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-used">
+						<p>Usado</p>
+					</div>
+
+					<img src="./img/catalog/mercedes-blue.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2019</p>
+							<p class="catalog__car__name">Mercedes Benz C300 Sport </p>
+							<p class="catalog__car__price">$54,420</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>San Francisco</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>35K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Hybrid</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Petrol</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-used">
+						<p>Usado/p>
+					</div>
+
+					<img src="./img/catalog/mazda-white.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2019</p>
+							<p class="catalog__car__name">Mazda MX-5 Miata Convertible</p>
+							<p class="catalog__car__price">$38,500</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>Los Angeles</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>18K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Manual</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Petrol</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-used">
+						<p>usado</p>
+					</div>
+
+					<img src="./img/catalog/nissan-370.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2019</p>
+							<p class="catalog__car__name">Nissan 370Z Nismo </p>
+							<p class="catalog__car__price">$54,420</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>New York</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>16K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Automatic</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Diesel</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-new">
+						<p>Novo</p>
+					</div>
+
+					<img src="./img/catalog/mazda-blue.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2018</p>
+							<p class="catalog__car__name">Mazda MX-5 Miata Convertible</p>
+							<p class="catalog__car__price">$38,500</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>Los Angeles</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>18K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Manual</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Gasoline</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-new">
+						<p>Novo</p>
+					</div>
+
+					<img src="./img/catalog/nissan-branca.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2019</p>
+							<p class="catalog__car__name">Nissan 370Z Nismo </p>
+							<p class="catalog__car__price">$38,500</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>Los Angeles</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>18K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Manual</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Petrol</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-new">
+						<p>Novo</p>
+					</div>
+
+					<img src="./img/catalog/golf-gti.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2019</p>
+							<p class="catalog__car__name">Volkswagen GTI S </p>
+							<p class="catalog__car__price">$20,000</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>San Francisco</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>25K mii</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Automatic</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Hybrid</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__cards__items">
+					<div class="catalog__badge-new">
+						<p>Novo</p>
+					</div>
+
+					<img src="./img/catalog/ford-explorer.png" alt="" />
+
+					<div class="catalog__items__info">
+						<div class="catalog__car__info">
+							<p class="catalog__car__year">2017</p>
+							<p class="catalog__car__name">Ford Explorer XLT </p>
+							<p class="catalog__car__price">$24,000</p>
+
+							<div class="catalog__car__location">
+								<img src="./img/catalog/location.svg" alt="" />
+								<p>Kansas</p>
+							</div>
+						</div>
+
+						<div class="catalog__items__compare">
+							<input id="checkbox-compare1" type="checkbox" />
+							<label for="checkbox-compare1">Compare</label>
+						</div>
+					</div>
+
+					<div class="catalog__divider"></div>
+
+					<div class="catalog__meta">
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/dashboard.svg" alt="" />
+							<p>18K mi</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/transmission.svg" alt="" />
+							<p>Manual</p>
+						</div>
+
+						<div class="catalog__meta__item">
+							<img src="./img/catalog/fuel.svg" alt="" />
+							<p>Petrol</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-top">
+			<div class="logo-dark">
+				<img src="./img/footer/logo-finder.png" alt="" />
 			</div>
 
-			<div class="footer-bottom">
-				<p>
-					Copyright © Finder | Gama Academy. Todos os direitos reservados - Este é um projeto acadêmico.
-				</p>
+			<div class="lang-location">
+				<div class="lang">
+					<img src="./img/footer/world.svg" alt="" />
+					<p>pt-BR</p>
+				</div>
 
-				<div class="menu-secondary">
-					<a href="#">Termos de uso</a>
-					<a href="#">Política de privacidade</a>
+				<div class="location">
+					<img src="./img/footer/pin.svg" alt="" />
+					<p>São Paulo</p>
 				</div>
 			</div>
-		</footer>
-    </body>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="footer-informations">
+			<div class="subscribe">
+				<h2>Cadastre-se na newletter</h2>
+
+				<p>Não perca nenhuma oferta relevante!</p>
+
+				<div class="input-group">
+					<input type="text" placeholder="Informe seu email" />
+
+					<button>
+						<img src="./img/footer/btn.svg" alt="icone enviar">
+					</button>
+				</div>
+			</div>
+
+			<section class="buy-sell">
+				<h3>Comprar ou Vender</h3>
+
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="about">
+				<h3>Sobre</h3>
+
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="profile">
+				<h3>Perfil</h3>
+
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+
+						<li>
+							<a href="#">Loren ipsum</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="contacts-social">
+				<div class="contacts">
+					<a id="phone" href="fone:+551111111111">
+						<img src="./img/footer/phone.svg" alt="icone telefone" />
+						(11) 1111-1111
+					</a>
+
+					<a id="email" href="mailto:email@example.com.br">
+						<img src="./img/footer/mail.svg" alt="icone email" />
+						email@example.com.br
+					</a>
+				</div>
+
+				<div class="social">
+					<a id="facebook" href="#">
+						<img src="./img/footer/facebook.svg" alt="logo facebook" />
+					</a>
+
+					<a id="twitter" href="#">
+						<img src="./img/footer/twitter.svg" alt="logo twitter" />
+					</a>
+
+					<a id="telegram" href="#">
+						<img src="./img/footer/telegram.svg" alt="logo telegram" />
+					</a>
+
+					<a id="telegram" href="#">
+						<img src="./img/footer/messeger.png" alt="logo messeger" />
+					</a>
+
+				</div>
+			</section>
+		</div>
+
+		<div class="footer-bottom">
+			<p>
+				Copyright © Finder | Gama Academy. Todos os direitos reservados - Este é um projeto acadêmico.
+			</p>
+
+			<div class="menu-secondary">
+				<a href="#">Termos de uso</a>
+				<a href="#">Política de privacidade</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
