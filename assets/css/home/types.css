@@ -53,28 +53,32 @@
     line-height: 150%;
 }
 
-.types .cards-line1 {
+.types .types-car--itens {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- 
-}
-
-.types .card-line2 {
-    display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.car-lines div a {
-    width: 24.0rem;
-    height: 16.0rem;
-    text-align: center;
+.types .types-car .teste-itens {
+    display: flex;
+}
+
+.types .types-car .item-filho {
+    padding-bottom: 40px;
+}
+
+.types .types-car .types-car--itens .item .item-filho:hover {
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 1.2rem;
 }
 
-.car-lines div a:hover {
-    background: rgba(255, 255, 255, 0.04);
+@media screen and (max-width: 500px) {
+    .types .types-car--itens {
+        flex-direction: column;
+    }
+
+    .types .types-car--itens .item {
+        display: flex;
+    }
+
 }
