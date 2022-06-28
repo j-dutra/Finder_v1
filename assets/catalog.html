@@ -99,7 +99,83 @@
 	</nav>
 
 	<main>
-		<aside></aside>
+		<aside>
+			<div class="tabs">
+                <button id="new" >Novo</button>
+                <button id="used">Usado</button>
+            </div>
+
+			<div class="asside-divider"></div>
+
+			<h3>Filtros</h3>
+
+			<div class="asside-divider"></div>
+
+			<h3>Localização</h3>
+
+			<input id="input-localization" type="select" placeholder="Escolha o local">
+
+			<div class="body-type">
+				<h3>Tipo</h3>
+
+				<form action="">
+					<input type="checkbox" id="body-type-1" >
+					<label for="body-type-1">Sedan</label>
+	
+					<input type="checkbox">
+					<label for=""></label>
+	
+					<input type="checkbox">
+					<label for=""></label>
+	
+					<input type="checkbox">
+					<label for=""></label>
+	
+					<input type="checkbox">
+					<label for=""></label>
+	
+					<input type="checkbox">
+					<label for=""></label>
+				</form>
+			</div>
+
+			<div class="make-model">
+				<h3>Marca e modelo</h3>
+
+				<div class="make-model__select">
+					<label for="Marca">Marca</label>
+					<select name="" id="Marca" style="background-color: transparent; border: none;"></select>
+				</div>
+
+				<div class="make-model__select">
+					<label for="Marca">Modelo</label>
+					<select name="" id="Marca" style="background-color: transparent; border: none;"></select>
+				</div>
+			</div>
+
+			<div class="year">
+				<h3>Ano</h3>
+
+				<div class="year-select">
+					<div class="year-select__itens">
+						<label for="">Todos</label>
+						<select name="" id=""></select>
+					</div>
+
+					<div class="year-select__divider"></div>
+
+					<div class="year-select__itens">
+						<label for="">Todos</label>
+						<select name="" id=""></select>
+					</div>
+				</div>
+			</div>
+
+			<div class="toggle">
+				<input type="">
+			</div>
+
+		</aside>
 
 		<div class="container">
 			<header>
@@ -132,7 +208,6 @@
 			</header>
 
 			<section class="catalog">
-
 				<div class="catalog__cards__items">
 					<div class="catalog__badge-used">
 						<p>Usado</p>
@@ -492,7 +567,6 @@
 						</div>
 					</div>
 				</div>
-
 			</section>
 		</div>
 	</main>
