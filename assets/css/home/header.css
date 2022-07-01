@@ -73,6 +73,7 @@ header .tabs #new {
 header .tabs #new:hover {
     color: #FD5631;
     background: #fff;
+    transition: .500;
 }
 
 header .tabs #used {
@@ -83,6 +84,23 @@ header .tabs #used {
 header .tabs #used:hover {
     background: #fff;
     color: #FD5631;
+    transition: .500;
+}
+
+header label {
+    height: 2.4rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+select {
+    border: none;
+    background: transparent;
+    opacity: 0.5;
 }
 
 /* input-group */

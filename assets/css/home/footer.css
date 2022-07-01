@@ -325,6 +325,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.4rem 1.4rem;
+    transition: .300s;
 }
 
 #facebook {

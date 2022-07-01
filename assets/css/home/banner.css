@@ -115,3 +115,53 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.banner__buttons {
+    width: 8.8rem;
+    height: 3.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: flex-start;
+
+    margin-top: 2.4rem;
+}
+
+.banner__buttons-item {
+    width: 3.6rem;
+    height: 3.6rem;
+
+    border-radius: 50%;
+}
+
+.banner__buttons-previous {
+    background: rgba(255, 255, 255, 0.04) url(../../img/banners/previous.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner__buttons-previous:hover {
+    cursor: pointer;
+    background: #fff url(../../img/banners/previous-hover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.500;
+}
+
+.banner__buttons-next {
+    background:rgba(255, 255, 255, 0.04) url(../../img/banners/next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner__buttons-next:hover {
+    cursor: pointer;
+
+    background: #fff url(../../img/banners/next-hover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.500;
+}
