@@ -119,23 +119,23 @@
 				<h3>Tipo</h3>
 
 				<form action="">
-					<input type="checkbox" id="body-type-1" >
-					<label for="body-type-1">Sedan</label>
+					<input type="checkbox" id="body-type__input1" >
+					<label for="body-type__input1">Sedan</label>
 	
-					<input type="checkbox">
-					<label for=""></label>
+					<input type="checkbox" id="body-type__input2">
+					<label for="body-type__input2">SUV</label>
 	
-					<input type="checkbox">
-					<label for=""></label>
-	
-					<input type="checkbox">
-					<label for=""></label>
-	
-					<input type="checkbox">
-					<label for=""></label>
-	
-					<input type="checkbox">
-					<label for=""></label>
+					<input type="checkbox" id="body-type__input3">
+					<label for="body-type__input3">Wagon</label>
+
+					<input type="checkbox" id="body-type__input4">
+					<label for="body-type__input4">Crossover</label>
+
+					<input type="checkbox" id="body-type__input5">
+					<label for="body-type__input5">Coupe</label>
+
+					<input type="checkbox" id="body-type__input6">
+					<label for="body-type__input6">Pickup</label>
 				</form>
 			</div>
 
@@ -171,8 +171,41 @@
 				</div>
 			</div>
 
-			<div class="toggle">
-				<input type="">
+			<div class="price">
+				<h3>Preço</h3>
+
+				<div class="year-select">
+					<div class="price-select__itens">
+						<label for="">Todos</label>
+						<select name="" id=""></select>
+					</div>
+
+					<div class="year-select__divider"></div>
+
+					<div class="price-select__itens">
+						<label for="">Todos</label>
+						<select name="" id=""></select>
+					</div>
+				</div>
+
+				<div class="toggle">
+					<input type="">
+				</div>
+			</div>
+
+			<div class="drive-type">
+				<h3>Tipo do carro</h3>
+
+				<form action="" class="drive-type__form">
+					<input type="text" class="drive-type__form_item" id="drive-type__form__input1">
+					<label for="drive-type__form__input1">AWD/4WD</label>
+
+					<input type="text" class="drive-type__form_item" id="drive-type__form__input2">
+					<label for="drive-type__form__input2">Front Wheel Drive</label>
+
+					<input type="text" class="drive-type__form_item" id="drive-type__form__input3">
+					<label for="drive-type__form__input3">Rear Wheel Drive</label>
+				</form>
 			</div>
 
 		</aside>
@@ -595,15 +628,18 @@
 		<div class="footer-informations">
 			<div class="subscribe">
 				<h2>Cadastre-se na newletter</h2>
-
+				
 				<p>Não perca nenhuma oferta relevante!</p>
 
 				<div class="input-group">
-					<input type="text" placeholder="Informe seu email" />
+					<label for="send-email">
+						<img src="./img/footer/email-input.svg" alt="">
+					</label>
+					<input id="send-email" type="text" placeholder="Informe seu email" />
 
 					<button>
 						<img src="./img/footer/btn.svg" alt="icone enviar">
-					</button>
+					</button>	
 				</div>
 			</div>
 
@@ -701,22 +737,17 @@
 				</div>
 
 				<div class="social">
-					<a id="facebook" href="#">
-						<img src="./img/footer/facebook.svg" alt="logo facebook" />
+					<a id="facebook" class="social-item" href="#">
 					</a>
 
-					<a id="twitter" href="#">
-						<img src="./img/footer/twitter.svg" alt="logo twitter" />
+					<a id="twitter" class="social-item" href="#">
 					</a>
 
-					<a id="telegram" href="#">
-						<img src="./img/footer/telegram.svg" alt="logo telegram" />
+					<a id="telegram" class="social-item" href="#">
 					</a>
 
-					<a id="telegram" href="#">
-						<img src="./img/footer/messeger.png" alt="logo messeger" />
+					<a id="messenger" class="social-item"  href="#">
 					</a>
-
 				</div>
 			</section>
 		</div>
