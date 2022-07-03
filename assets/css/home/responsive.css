@@ -1,19 +1,19 @@
-@media (max-width: 1296px) {
+@media screen and (max-width: 1296px) {
 
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     
 }
 
-@media (max-width: 480px) {
-    
+@media screen and (max-width: 480px) {
+
 }

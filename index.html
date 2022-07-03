@@ -35,9 +35,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
         <!-- import style sheets, per sections -->
+        <link rel="stylesheet" href="./assets/css/home/responsive.css">
         <link rel="stylesheet" href="./assets/css/home/reset.css">
         <link rel="stylesheet" href="./assets/css/home/pattern.css">
-        <link rel="stylesheet" href="./assets/css/home/responsive.css">
         <link rel="stylesheet" href="./assets/css/home/style.css">
         <link rel="stylesheet" href="./assets/css/home/nav-bar.css">
         <link rel="stylesheet" href="./assets/css/home/header.css">
@@ -69,941 +69,981 @@
     </head>
 
     <body>
-        <nav class="nav-bar">
-            <div class="logo-menu">
-                <div class="logo-dark">
-                    <img src="./assets/img/nav-bar/logo-dark.png" alt="logo car-finder">
-                </div>
+		<div class="container">
+			<nav class="nav-bar">
+				<div class="logo-menu">
+					<div class="logo-dark">
+						<img src="./assets/img/nav-bar/logo-dark.png" alt="logo car-finder">
+					</div>
 
-                <div class="divider"></div>
+					<div class="divider"></div>
 
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Novos</a>
-                        </li>
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="#">Novos</a>
+							</li>
 
-                        <li>
-                            <a href="./assets/catalog.html">Usados</a>
-                        </li>
+							<li>
+								<a href="./assets/catalog.html">Usados</a>
+							</li>
 
-                        <li>
-                            <a href="#">Vender</a>
-                        </li>
+							<li>
+								<a href="#">Vender</a>
+							</li>
 
-                        <li>
-                            <a href="#">Comprar</a>
-                        </li>
+							<li>
+								<a href="#">Comprar</a>
+							</li>
 
-                        <li>
-                            <a href="#">Novidades e Reviews</a>
-                        </li>
-                    </ul>
-                </div>
+							<li>
+								<a href="#">Novidades e Reviews</a>
+							</li>
+						</ul>
+					</div>
 
-            </div>
+				</div>
 
-            <div class="right">
-                <a href="#">
-                    <img src="./assets/img/nav-bar/user.png" alt="icone de login">
-                    <p>Entrar</p>
-                </a>
-                
-                <button>+ Vender</button>
-            </div>
-        </nav>
-
-        <header>
-            <div class="text-img">
-                <div class="h1-p">
-                    <h1>Compre e venda com facilidade. </h1>
-        
-                    <p>
-                        O Finder é um mercado digital líder para a indústria automotiva que conecta compradores de carros a vendedores.
-                    </p>
-                </div>
-    
-                <img id="orange-car" src="./assets/img/header/orange-car.png" alt="um carro laranja">
-            </div>
-
-            <div class="tabs">
-                <button id="new" >Novo</button>
-                <button id="used">Usado</button>
-            </div>
-
-			<section class="input-group">
-				<form>
-					<img src="./assets/img/header/search.svg" alt="">
-                    <input type="text"   id="search"   placeholder="Pesquisar por ...">
-
-					<div class="header__input-group__divider"></div>
-
-					<img src="./assets/img/header/star.svg" alt="">
-					<label for="location">Marca</label>
-					<select name="make" id="make"></select>
-
-					<div class="header__input-group__divider"></div>
-
-					<img src="./assets/img/header/list.svg" alt="">
-					<label for="location">Modelo</label>
-					<select name="model" id="model"></select>
-
-					<div class="header__input-group__divider"></div>
-
-					<img src="./assets/img/header/car.svg" alt="">
-					<label for="type">Tipo</label>
-					<select name="type" id="type"></select>
-
-					<div class="header__input-group__divider"></div>
-
-					<img src="./assets/img/header/pin.svg" alt="">
-					<label for="location">Local</label>
-					<select name="location" id="location"></select>
-
-                    <input type="submit" id="submit"   value="Pesquisar" >
-				</form>
-			</section>
-		</header>
-
-        <main>
-            <section class="types">
-				<div class="types-top">
-					<h2>Mais procurados</h2>
-
-					<a href="#" class="view-all">
-						<p>Ver todos</p>
-						<img class="arrow" src="./assets/img/types/arrow.svg" alt="arrow">
+				<div class="right">
+					<a href="#">
+						<img src="./assets/img/nav-bar/user.png" alt="icone de login">
+						<p>Entrar</p>
 					</a>
+					
+					<button>+ Vender</button>
 				</div>
+			</nav>
 
-				<div class="car-lines">
-					<div class="cards-line1">
-						<a href="">
-							<img src="./assets/img/types/sedan.png" alt="card sedan">
-							<p>Sedan</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/suv.png" alt="card suv">
-							<p>Suv</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/wagon.png" alt="card wagon">
-							<p>Wagnon</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/crossover.png" alt="card crossover">
-							<p>Crossover</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/coupe.png" alt="card coupe">
-							<p>Coupe</p>
-						</a>
+			<header>
+				<div class="text-img">
+					<div class="h1-p">
+						<h1>Compre e venda com facilidade. </h1>
+			
+						<p>
+							O Finder é um mercado digital líder para a indústria automotiva que conecta compradores de carros a vendedores.
+						</p>
 					</div>
 
-					<div class="card-line2">
-						<a href="">
-							<img src="./assets/img/types/pickup.png" alt="card pickup">
-							<p>Pickup</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/sport coupe.png" alt="card sport coupe">
-							<p>Sport Coupe</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/compact.png" alt="card compact">
-							<p>Compact</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/conversible.png" alt="card conversible">
-							<p>Convertible</p>
-						</a>
-
-						<a href="">
-							<img src="./assets/img/types/family mpv.png" alt="card family mpv">
-							<p>Family MPV</p>
-						</a>
-					</div>
-				</div>
-			</section>
-
-            <section class="offers">
-				<div class="offers__title-link">
-					<h2>Ofertas</h2>
-
-					<div class="offers__link">
-						<p>Veja todas as ofertas</p>
-						<img src="./assets/img/top-offers/arrow.svg" alt="">
+					<div class="orange-car">
+						<img id="orange-car" class="img-responsive" src="./assets/img/header/orange-car.png" alt="Finder - Compre e venda com facilidade">
 					</div>
 				</div>
 
-				<div class="offers__cards">
-					<div class="offers__cards-vertical offers__cards-hover">
-						<div class="offers__badge-used">
-							<p>Usado</p>
-						</div>
+				<div class="tabs">
+					<button id="new" >Novo</button>
+					<button id="used">Usado</button>
+				</div>
 
-						<img src="./assets/img/top-offers/white-car.png" alt="">
-	
-						<div class="offers__car-info-compare">
-							<div class="offers__car-info">
-								<p class="offers__car__year">2014</p>
-								<p class="offers__car__name">Mercedes Benz Convertible Coupe</p>
-								<p class="offers__car__price">$25,880</p>
+				<div class="header__input-group">
+					<form class="form">
+						<label for="search" class="search-label form-label">
+							<input class="form-item" type="text" id="search" name="search" placeholder="Pesquisar por ...">
+						</label>
+
+						<label for="make" class="make-label form-label">
+							<select class="form-item" name="make" id="">
+								<option value="Marca" disabled selected>Marca</option>
+							</select>
+						</label>
+
+						<label for="model" class="model-label form-label">
+							<select class="form-item" name="model" id="">
+								<option value="Modelo" disabled selected>Modelo</option>
+							</select>
+						</label>
+
+						<label for="type" class="type-label form-label">
+							<select class="form-item" name="type" id="">
+								<option value="Tipo" disabled selected>Tipo</option>
+							</select>
+						</label>
+
+						<label for="location" class="location-label form-label">
+							<select class="form-item" name="location" id="">
+								<option value="Local" disabled selected>Local</option>
+							</select>
+						</label>
+						<input type="submit" id="submit"   value="Pesquisar" >
+					</form>
+				</div>
+			</header>
+
+			<main>
+				<section class="types">
+					<div class="types-top">
+						<h2>Mais procurados</h2>
 		
-								<div class="offers__car__location">
-									<img src="./assets/img/top-offers/location.svg" alt="" />
-									<p>New York</p>
+						<div class="view-all">
+							<p>Ver todos</p>
+							<img class="arrow" src="./assets/img/types/arrow.svg" alt="arrow">
+						</div>
+					</div>
+	
+					<div class="types-car">
+						<div class="types-car--itens">
+							<div class="item">
+								<div class="item-filho">
+									<a href="#" class="item-1">
+										<img src="./assets/img/types/sedan.png" alt="card sedan">
+										<p>Sedan</p>
+									</a>
+								</div>
+		
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/suv.png" alt="card suv">
+										<p>Suv</p>
+									</a>
 								</div>
 							</div>
-	
-							<div class="offers__car-compare">
-								<input id="offers-compare1" type="checkbox" />
-								<label for="offers-compare1">Compare</label>
+							<div class="item">
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/wagon.png" alt="card wagon">
+										<p>Wagnon</p>
+									</a>
+								</div>
+		
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/crossover.png" alt="card crossover">
+										<p>Crossover</p>
+									</a>
+								</div>
 							</div>
-						</div>
-	
-						<div class="offers__divider"></div>
-	
-						<div class="offers__vertical-meta">	
-							<div class="offers__meta__itens">
-								<img src="./assets/img/top-offers/dashboard.svg" alt="">
-								<p>48K mi</p>
+							<div class="item">
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/coupe.png" alt="card coupe">
+										<p>Coupe</p>
+									</a>
+								</div>
+		
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/pickup.png" alt="card pickup">
+										<p>Pickup</p>
+									</a>
+								</div>
 							</div>
-	
-							<div class="offers__meta__itens">
-								<img src="./assets/img/top-offers/transmission.svg" alt="">
-								<p>Automatic</p>
+							<div class="item">
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/sport coupe.png" alt="card sport coupe">
+										<p>Sport Coupe</p>
+									</a>
+								</div>
+		
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/compact.png" alt="card compact">
+										<p>Compact</p>
+									</a>
+								</div>
 							</div>
-	
-							<div class="offers__meta__itens">
-								<img src="./assets/img/top-offers/fuel.svg" alt="">
-								<p>Petrol</p>
+							<div class="item">
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/conversible.png" alt="card conversible">
+										<p>Convertible</p>
+									</a>
+								</div>
+		
+								<div class="item-filho">
+									<a href="">
+										<img src="./assets/img/types/family mpv.png" alt="card family mpv">
+										<p>Family MPV</p>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-	
-					<div class="offers__cards-horizontal">
-						<div class="cards__horizontal offers__cards-hover">
+				</section>
+
+				<section class="offers">
+					<div class="offers__title-link">
+						<h2>Ofertas</h2>
+
+						<div class="offers__link">
+							<p>Veja todas as ofertas</p>
+							<img src="./assets/img/top-offers/arrow.svg" alt="">
+						</div>
+					</div>
+
+					<div class="offers__cards">
+						<div class="offers__cards-vertical offers__cards-hover">
 							<div class="offers__badge-used">
 								<p>Usado</p>
 							</div>
 
-							<img src="./assets/img/top-offers/green-car.png" alt="">
-
-							<div class="horizontal__card__info">
-								<div class="card-horizontal__info-compare">
-									<div class="card-horizontal__info">
-										<p class="offers__car__year">1995</p>
-										<p class="offers__car__name">Ford Truck Lifted</p>
-										<p class="offers__car__price">$24,000</p>
+							<img class="img-responsive" src="./assets/img/top-offers/white-car.png" alt="">
 		
-										<div class="offers__car__location">
-											<img src="./assets/img/top-offers/location.svg" alt="" />
-											<p>Chicago</p>
-										</div>
-									</div>
-
-									<div class="offers__car-compare">
-										<input id="offers-compare2" type="checkbox" />
-										<label for="offers-compare2">Compare</label>
+							<div class="offers__car-info-compare">
+								<div class="offers__car-info">
+									<p class="offers__car__year">2014</p>
+									<p class="offers__car__name">Mercedes Benz Convertible Coupe</p>
+									<p class="offers__car__price">$25,880</p>
+			
+									<div class="offers__car__location">
+										<img src="./assets/img/top-offers/location.svg" alt="" />
+										<p>New York</p>
 									</div>
 								</div>
-
-								<div class="card-horizontal__divider"></div>
-
-								<div class="card-horizontal__meta">
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/dashboard.svg" alt="">
-										<p>48K mi</p>
-									</div>
-			
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/transmission.svg" alt="">
-										<p>Automatic</p>
-									</div>
-			
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/fuel.svg" alt="">
-										<p>Petrol</p>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="cards__horizontal offers__cards-hover">
-							<div class="offers__badge-new">
-								<p>Novo</p>
-							</div>
-
-							<img src="./assets/img/top-offers/blue-car.png" alt="">
-
-							<div class="horizontal__card__info">
-								<div class="card-horizontal__info-compare">
-									<div class="card-horizontal__info">
-										<p class="offers__car__year">2020</p>
-										<p class="offers__car__name">Mercedes Benz C300 Sport </p>
-										<p class="offers__car__price">$54,420</p>
 		
-										<div class="offers__car__location">
-											<img src="./assets/img/top-offers/location.svg" alt="" />
-											<p>San Francisco</p>
-										</div>
-									</div>
-
-									<div class="offers__car-compare">
-										<input id="offers-compare3" type="checkbox" />
-										<label for="offers-compare3">Compare</label>
-									</div>
-								</div>
-
-								<div class="card-horizontal__divider"></div>
-
-								<div class="card-horizontal__meta">
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/dashboard.svg" alt="">
-										<p>48K mi</p>
-									</div>
-			
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/transmission.svg" alt="">
-										<p>Automatic</p>
-									</div>
-			
-									<div class="horizontal__meta__itens">
-										<img src="./assets/img/top-offers/fuel.svg" alt="">
-										<p>Petrol</p>
-									</div>
-
+								<div class="offers__car-compare">
+									<input id="offers-compare1" type="checkbox" />
+									<label for="offers-compare1">Compare</label>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-            <section class="logos">
-				<a href="">
-					<img src="./assets/img/logos/opel-logo.svg" alt="logo opel">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/audi-logo.svg" alt="logo audi">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/mercedes-benz-logo.svg" alt="logo mercedes-bens">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/toyota-logo.svg" alt="logo toyota">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/mazda-logo.svg" alt="logo mazda">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/nissan-logo.svg" alt="nissan">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/hyundai-logo.svg" alt="logo hyundai">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/lexus-logo.svg" alt="logo lexus">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/honda-logo.svg" alt="logo honda">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/renault-logo.svg" alt="logo renault">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/infiniti-logo.svg" alt="logo infiniti">
-				</a>
-
-				<a href="">
-					<img src="./assets/img/logos/mitsubishi-logo.svg" alt="logo mitsubishi">
-				</a>
-			</section>
-
-			<section class="features">
-				<div class="features__column-left">
-					<h2>O que temos de diferente</h2>
-
-					<div class="column-left">
-						<div class="features-left">
-							<div class="features-left-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									That’s more than you’ll find on any other major online automotive marketplace in the USA.
-								</p>
-							</div>
-
-							<img src="./assets/img/features/file.svg" alt="">
-						</div>
-
-						<div class="features-left">
-							<div class="features-left-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									Our powerful search makes it easy to personalize your results so you only see the cars and features you care about.
-								</p>
-							</div>
-
-							<img src="./assets/img/features/search.svg" alt="">
-						</div>
-
-						<div class="features-left">
-							<div class="features-left-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									Our team is constantly developing new features that make the process of buying and selling a car simpler.
-								</p>
-							</div>
-
-							<img src="./assets/img/features/setting.svg" alt="">
-						</div>
-					</div>
-				</div>
-
-				<div class="auto-road">
-					<img src="./assets/img/features/auto.png" alt="">
-					<img src="./assets/img/features/road-line.svg" alt="">
-				</div>
-
-				<div class="features__column-right">
-					<a href="#">
-						Como vender carros no Finder 
-						<img src="./assets/img/features/arrow.svg" alt="">
-					</a>
-
-					<div class="column-right">
-						<div class="features-right">
-							<img src="./assets/img/features/circle.svg" alt="">
-
-							<div class="features-right-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									We provide free access to key info like dealer reviews, market value, price drops.
-								</p>
-							</div>
-						</div>
-
-						<div class="features-right">
-							<img src="./assets/img/features/user.svg" alt="">
-
-							<div class="features-right-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									We focus on building the most transparent, trustworthy experience for our users, and we’ve proven that works for dealers, too.
-								</p>
-							</div>
-						</div>
-
-						<div class="features-right">
-							<img src="./assets/img/features/calculator.svg" alt="">
-
-							<div class="features-right-text">
-								<h3>Loren ipsun</h3>
-	
-								<p>
-									Specify the parameters of your car to form its market value on the basis of similar cars on Finder.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="latest">
-				<div class="lattest__div-right">
-					<img src="./assets/img/latest-cars/previous.svg" alt="">
-				</div>
-	
-				<div class="latest__div-midlle">
-					<div class="latest__top">
-						<h2 class="latest__top__h2">Ultimos publicados</h2>
-	
-						<div class="latest__top__tabsLink">
-							<div class="latest__top__tabs">
-								<button class="top__tabs__new">Novo</button>
-								<button class="top__tabs__used">Usado</button>
-							</div>
-	
-							<div class="latest__top__link">
-								<p>Ver todos</p>
-								<img src="./assets/img/latest-cars/arrow.svg" alt="">
-							</div>
-						</div>
-					</div>
-	
-					<div class="latest__cards">
-						<div class="latest__cards__items">
-							<div class="latest__badge-new">
-								<p>Novo</p>
-							</div>
-	
-							<img src="./assets/img/latest-cars/mazda.png" alt="" />
-	
-							<div class="latest__items__info">
-								<div class="latest__car__info">
-									<p class="latest__car__year">2019</p>
-									<p class="latest__car__name">Mazda MX-5 Miata Convertible</p>
-									<p class="latest__car__price">$38,500</p>
-	
-									<div class="latest__car__location">
-										<img src="./assets/img/latest-cars/pin.svg" alt="" />
-										<p>Los Angeles</p>
-									</div>
+		
+							<div class="offers__divider"></div>
+		
+							<div class="offers__vertical-meta">	
+								<div class="offers__meta__itens">
+									<img src="./assets/img/top-offers/dashboard.svg" alt="">
+									<p>48K mi</p>
 								</div>
-	
-								<div class="latest__items__compare">
-									<input id="checkbox-compare1" type="checkbox" />
-									<label for="checkbox-compare1">Compare</label>
+		
+								<div class="offers__meta__itens">
+									<img src="./assets/img/top-offers/transmission.svg" alt="">
+									<p>Automatic</p>
 								</div>
-							</div>
-	
-							<div class="latest__divider"></div>
-	
-							<div class="latest__meta">
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
-									<p>18K mi</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
-									<p>Manual</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+		
+								<div class="offers__meta__itens">
+									<img src="./assets/img/top-offers/fuel.svg" alt="">
 									<p>Petrol</p>
 								</div>
 							</div>
 						</div>
-	
-						<div class="latest__cards__items">
-							<div class="latest__badge-used">
-								<p>Usado</p>
-							</div>
-	
-							<img src="./assets/img/latest-cars/bmw.png" alt="" />
-	
-							<div class="latest__items__info">
-								<div class="latest__car__info">
-									<p class="latest__car__year">2019</p>
-									<p class="latest__car__name">BMW 640 XI Gran Turismo </p>
-									<p class="latest__car__price">$44,920</p>
-	
-									<div class="latest__car__location">
-										<img src="./assets/img/latest-cars/pin.svg" alt="" />
-										<p>New Jersey</p>
-									</div>
+		
+						<div class="offers__cards-horizontal">
+							<div class="cards__horizontal offers__cards-hover">
+								<div class="offers__badge-used">
+									<p>Usado</p>
 								</div>
-	
-								<div class="latest__items__compare">
-									<input id="checkbox-compare2" type="checkbox" />
-									<label for="checkbox-compare2">Compare</label>
-								</div>
-							</div>
-	
-							<div class="latest__divider"></div>
-	
-							<div class="latest__meta">
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
-									<p>10K mi</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
-									<p>Automatic</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
-									<p>Gasoline</p>
-								</div>
-							</div>
-						</div>
-	
-						<div class="latest__cards__items">
-							<div class="latest__badge-used">
-								<p>Usado</p>
-							</div>
-	
-							<img src="./assets/img/latest-cars/nissan.png" alt="" />
-	
-							<div class="latest__items__info">
-								<div class="latest__car__info">
-									<p class="latest__car__year">2019</p>
-									<p class="latest__car__name">Nissan 370Z Nismo</p>
-									<p class="latest__car__price">$37,900</p>
-	
-									<div class="latest__car__location">
-										<img src="./assets/img/latest-cars/pin.svg" alt="" />
-										<p>New York</p>
-									</div>
-								</div>
-	
-								<div class="latest__items__compare">
-									<input id="checkbox-compare3" type="checkbox" />
-									<label for="checkbox-compare3">Compare</label>
-								</div>
-							</div>
-	
-							<div class="latest__divider"></div>
-	
-							<div class="latest__meta">
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
-									<p>16K mi</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/transmission.svg" alt="" />
-									<p>Automatic</p>
-								</div>
-	
-								<div class="latest__meta__item">
-									<img src="./assets/img/latest-cars/fuel.svg" alt="" />
-									<p>Diesel</p>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="latest__bottom">
-						<span class="latest__bottom-rigth"></span>
-						<span class="latest__bottom-middle"></span>
-						<span class="latest__bottom-left"></span>
-					</div>
-				</div>
-	
-				<div class="lattest__div-left">
-					<img src="./assets/img/latest-cars/next.svg" alt="">
-				</div>
-			</section>
 
-			<section class="banner">
-				<div class="banner-top">
-					<div class="banner-top-right">
-						<h2>Loren ipsun</h2>
-						<p>Loren ipsun site amet</p>
-						<button>Ir para loja</button>
-					</div>
+								<img src="./assets/img/top-offers/green-car.png" alt="">
 
-					<div class="products">
-						<a href="#">
-							<img src="./assets/img/banners/bancos.png" alt="">
-							<p class="product-items">Bancos</p>
-						</a>
-
-						<a href="#">
-							<img src="./assets/img/banners/pneus.png" alt="">
-							<p class="product-items">Pneus</p>
-						</a>
-
-						<a href="#">
-							<img src="./assets/img/banners/rodas.png" alt="">
-							<p class="product-items">Rodas</p>
-						</a>
-
-						<a href="#">
-							<img src="./assets/img/banners/acessorios.png" alt="">
-							<p class="product-items">Acessorios</p>
-						</a>
-					</div>
-				</div>
-
-				<div class="banner__buttons">
-					<div class="banner__buttons-item banner__buttons-previous"></div>
-
-					<div class="banner__buttons-item banner__buttons-next"></div>
-				</div>
-			</section>
-
-			<section class="app">
-				<div class="apps">
-					<div>
-						<h2>Baixe o nosso app</h2>
-					</div>
-
-					<div>
-						<p>
-							Baixe o Finder App e junte-se à comunidade de entusiastas de carros. Não pare sua busca de carro quando sair do computador com nosso aplicativo para Android e iOS!
-						</p>
-					</div>
-
-					<div class="btns">
-						<a id="app-store" href="https://www.apple.com/br/app-store/" target="_blank">
-							<img src="./assets/img/apps/app-store.png" alt="">
-						</a>
-
-						<a id="google-play" href="https://play.google.com/" target="_blank">
-							<img src="./assets/img/apps/google-play.png" alt="">
-						</a>
-					</div>
-				</div>
-
-				<div class="ilustration">
-					<img src="./assets/img/apps/illustration.png" alt="">
-
-				</div>
-
-			</section>
+								<div class="horizontal__card__info">
+									<div class="card-horizontal__info-compare">
+										<div class="card-horizontal__info">
+											<p class="offers__car__year">1995</p>
+											<p class="offers__car__name">Ford Truck Lifted</p>
+											<p class="offers__car__price">$24,000</p>
 			
-			<section class="blog">
-				<div class="blog-top">
-					<h2>Ultimas novidades</h2>
-					<a href="#">
-						Ir para o blog
-						<img src="/assets/img/blog/arrow.svg" alt="">
-					</a>
-				</div>
+											<div class="offers__car__location">
+												<img src="./assets/img/top-offers/location.svg" alt="" />
+												<p>Chicago</p>
+											</div>
+										</div>
 
-				<div class="blog-cards">
-					<div class="cards-blog">
-						<img src="./assets/img/blog/fusca.png" alt="">
+										<div class="offers__car-compare">
+											<input id="offers-compare2" type="checkbox" />
+											<label for="offers-compare2">Compare</label>
+										</div>
+									</div>
 
-						<div class="title">
-							<h4>Dicas</h4>
-							<p>Loren ipsuns</p>
-						</div>
+									<div class="card-horizontal__divider"></div>
 
-						<div class="author">
-							<img src="./assets/img/blog/jacob.svg" alt="">
+									<div class="card-horizontal__meta">
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/dashboard.svg" alt="">
+											<p>48K mi</p>
+										</div>
+				
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/transmission.svg" alt="">
+											<p>Automatic</p>
+										</div>
+				
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/fuel.svg" alt="">
+											<p>Petrol</p>
+										</div>
 
-							<div class="author-info">
-								<div class="author-name">
-									Jacob Jones
+									</div>
 								</div>
-								<img class="author-date" src="./assets/img/blog/date1.svg" alt="">
+							</div>
+
+							<div class="cards__horizontal offers__cards-hover">
+								<div class="offers__badge-new">
+									<p>Novo</p>
+								</div>
+
+								<img src="./assets/img/top-offers/blue-car.png" alt="">
+
+								<div class="horizontal__card__info">
+									<div class="card-horizontal__info-compare">
+										<div class="card-horizontal__info">
+											<p class="offers__car__year">2020</p>
+											<p class="offers__car__name">Mercedes Benz C300 Sport </p>
+											<p class="offers__car__price">$54,420</p>
+			
+											<div class="offers__car__location">
+												<img src="./assets/img/top-offers/location.svg" alt="" />
+												<p>San Francisco</p>
+											</div>
+										</div>
+
+										<div class="offers__car-compare">
+											<input id="offers-compare3" type="checkbox" />
+											<label for="offers-compare3">Compare</label>
+										</div>
+									</div>
+
+									<div class="card-horizontal__divider"></div>
+
+									<div class="card-horizontal__meta">
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/dashboard.svg" alt="">
+											<p>48K mi</p>
+										</div>
+				
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/transmission.svg" alt="">
+											<p>Automatic</p>
+										</div>
+				
+										<div class="horizontal__meta__itens">
+											<img src="./assets/img/top-offers/fuel.svg" alt="">
+											<p>Petrol</p>
+										</div>
+
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="cards-blog">
-						<img src="./assets/img/blog/traseira-carro.png" alt="">
-
-						<div class="title">
-							<h4>OFERTAS</h4>
-							<p>Loren ipsuns</p>
-						</div>
-
-						<div class="author">
-							<img src="./assets/img/blog/annette.svg" alt="">
-
-							<div class="author-info">
-								<div class="author-name">
-									Annette Black
-								</div>
-								<img class="author-date" src="./assets/img/blog/date2.svg" alt="">
-							</div>
-						</div>
-					</div>
-
-					<div class="cards-blog">
-						<img src="./assets/img/blog/moto.png" alt="">
-
-						<div class="title">
-							<h4>OFERTAS</h4>
-							<p>Loren ipsuns</p>
-						</div>
-
-						<div class="author">
-							<img src="./assets/img/blog/ralph.svg" alt="">
-
-							<div class="author-info">
-								<div class="author-name">
-									Ralph Edwards
-								</div>
-								<img class="author-date" src="./assets/img/blog/date3.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-        </main>
-
-		<footer>
-			<div class="footer-top">
-				<div class="logo-dark">
-					<img src="./assets/img/footer/logo-finder.png" alt="" />
-				</div>
-
-				<div class="lang-location">
-					<div class="lang">
-						<img src="./assets/img/footer/world.svg" alt="" />
-						<p>pt-BR</p>
-					</div>
-
-					<div class="location">
-						<img src="./assets/img/footer/pin.svg" alt="" />
-						<p>São Paulo</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="divider"></div>
-
-			<div class="footer-informations">
-				<div class="subscribe">
-					<h2>Cadastre-se na newletter</h2>
-					
-					<p>Não perca nenhuma oferta relevante!</p>
-
-					<div class="input-group">
-						<label for="send-email">
-							<img src="/assets/img/footer/email-input.svg" alt="">
-						</label>
-						<input id="send-email" type="text" placeholder="Informe seu email" />
-
-						<button>
-							<img src="./assets/img/footer/btn.svg" alt="icone enviar">
-						</button>	
-					</div>
-				</div>
-
-				<section class="buy-sell">
-					<h3>Comprar ou Vender</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
 				</section>
 
-				<section class="about">
-					<h3>Sobre</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="profile">
-					<h3>Perfil</h3>
-
-					<div class="menu">
-						<ul>
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-
-							<li>
-								<a href="#">Loren ipsum</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="contacts-social">
-					<div class="contacts">
-						<a id="phone" href="fone:+551111111111">
-							<img src="./assets/img/footer/phone.svg" alt="icone telefone" />
-							(11) 1111-1111
-						</a>
-
-						<a id="email" href="mailto:email@example.com.br">
-							<img src="./assets/img/footer/mail.svg" alt="icone email" />
-							email@example.com.br
-						</a>
-					</div>
-
-					<div class="social">
-						<a id="facebook" class="social-item" href="#">
+				<section class="logos">
+					<div class="logos__itens">
+						<a href="">
+							<img src="./assets/img/logos/opel-logo.svg" alt="logo opel">
 						</a>
 	
-						<a id="twitter" class="social-item" href="#">
+						<a href="">
+							<img src="./assets/img/logos/audi-logo.svg" alt="logo audi">
 						</a>
 	
-						<a id="telegram" class="social-item" href="#">
+						<a href="">
+							<img src="./assets/img/logos/mercedes-benz-logo.svg" alt="logo mercedes-bens">
 						</a>
+					</div>
 
-						<a id="messenger" class="social-item"  href="#">
+					<div class="logos__itens">
+						<a href="">
+							<img src="./assets/img/logos/toyota-logo.svg" alt="logo toyota">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/mazda-logo.svg" alt="logo mazda">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/nissan-logo.svg" alt="nissan">
+						</a>
+					</div>
+
+					<div class="logos__itens">
+						<a href="">
+							<img src="./assets/img/logos/hyundai-logo.svg" alt="logo hyundai">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/lexus-logo.svg" alt="logo lexus">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/honda-logo.svg" alt="logo honda">
+						</a>
+					</div>
+
+					<div class="logos__itens">
+						<a href="">
+							<img src="./assets/img/logos/renault-logo.svg" alt="logo renault">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/infiniti-logo.svg" alt="logo infiniti">
+						</a>
+	
+						<a href="">
+							<img src="./assets/img/logos/mitsubishi-logo.svg" alt="logo mitsubishi">
 						</a>
 					</div>
 				</section>
-			</div>
 
-			<div class="footer-bottom">
-				<p>
-					Copyright © Finder | Gama Academy. Todos os direitos reservados - Este é um projeto acadêmico.
-				</p>
+				<section class="features">
+					<div class="features-top">
+						<h2>O que temos de diferente</h2>
 
-				<div class="menu-secondary">
-					<a href="#">Termos de uso</a>
-					<a href="#">Política de privacidade</a>
+						<a href="#">
+							Como vender carros no Finder 
+							<img src="./assets/img/features/arrow.svg" alt="">
+						</a>
+					</div>
+
+					<div class="features-content">
+						<div class="features__column-left">
+							<div class="column-left">
+								<div class="features-left">
+									<div class="features-left-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											That’s more than you’ll find on any other major online automotive marketplace in the USA.
+										</p>
+									</div>
+
+									<img src="./assets/img/features/file.svg" alt="">
+								</div>
+
+								<div class="features-left">
+									<div class="features-left-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											Our powerful search makes it easy to personalize your results so you only see the cars and features you care about.
+										</p>
+									</div>
+
+									<img src="./assets/img/features/search.svg" alt="">
+								</div>
+
+								<div class="features-left">
+									<div class="features-left-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											Our team is constantly developing new features that make the process of buying and selling a car simpler.
+										</p>
+									</div>
+
+									<img src="./assets/img/features/setting.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="auto-road">
+							<img class="car"  src="./assets/img/features/auto.png" alt="">
+							<img class="line" src="./assets/img/features/road-line.svg" alt="">
+						</div>
+
+						<div class="features__column-right">
+							<div class="column-right">
+								<div class="features-right">
+									<img src="./assets/img/features/circle.svg" alt="">
+
+									<div class="features-right-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											We provide free access to key info like dealer reviews, market value, price drops.
+										</p>
+									</div>
+								</div>
+
+								<div class="features-right">
+									<img src="./assets/img/features/user.svg" alt="">
+
+									<div class="features-right-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											We focus on building the most transparent, trustworthy experience for our users, and we’ve proven that works for dealers, too.
+										</p>
+									</div>
+								</div>
+
+								<div class="features-right">
+									<img src="./assets/img/features/calculator.svg" alt="">
+
+									<div class="features-right-text">
+										<h3>Loren ipsun</h3>
+			
+										<p>
+											Specify the parameters of your car to form its market value on the basis of similar cars on Finder.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="latest">
+					<div class="lattest__div-right">
+						<img src="./assets/img/latest-cars/previous.svg" alt="">
+					</div>
+		
+					<div class="latest__div-midlle">
+						<div class="latest__top">
+							<h2 class="latest__top__h2">Ultimos publicados</h2>
+		
+							<div class="latest__top__tabsLink">
+								<div class="latest__top__tabs">
+									<button class="top__tabs__new">Novo</button>
+									<button class="top__tabs__used">Usado</button>
+								</div>
+		
+								<div class="latest__top__link">
+									<p>Ver todos</p>
+									<img src="./assets/img/latest-cars/arrow.svg" alt="">
+								</div>
+							</div>
+						</div>
+		
+						<div class="latest__cards">
+							<div class="latest__cards__items">
+								<div class="latest__badge-new">
+									<p>Novo</p>
+								</div>
+		
+								<img src="./assets/img/latest-cars/mazda.png" alt="" />
+		
+								<div class="latest__items__info">
+									<div class="latest__car__info">
+										<p class="latest__car__year">2019</p>
+										<p class="latest__car__name">Mazda MX-5 Miata Convertible</p>
+										<p class="latest__car__price">$38,500</p>
+		
+										<div class="latest__car__location">
+											<img src="./assets/img/latest-cars/pin.svg" alt="" />
+											<p>Los Angeles</p>
+										</div>
+									</div>
+		
+									<div class="latest__items__compare">
+										<input id="checkbox-compare1" type="checkbox" />
+										<label for="checkbox-compare1">Compare</label>
+									</div>
+								</div>
+		
+								<div class="latest__divider"></div>
+		
+								<div class="latest__meta">
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+										<p>18K mi</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+										<p>Manual</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+										<p>Petrol</p>
+									</div>
+								</div>
+							</div>
+		
+							<div class="latest__cards__items">
+								<div class="latest__badge-used">
+									<p>Usado</p>
+								</div>
+		
+								<img src="./assets/img/latest-cars/bmw.png" alt="" />
+		
+								<div class="latest__items__info">
+									<div class="latest__car__info">
+										<p class="latest__car__year">2019</p>
+										<p class="latest__car__name">BMW 640 XI Gran Turismo </p>
+										<p class="latest__car__price">$44,920</p>
+		
+										<div class="latest__car__location">
+											<img src="./assets/img/latest-cars/pin.svg" alt="" />
+											<p>New Jersey</p>
+										</div>
+									</div>
+		
+									<div class="latest__items__compare">
+										<input id="checkbox-compare2" type="checkbox" />
+										<label for="checkbox-compare2">Compare</label>
+									</div>
+								</div>
+		
+								<div class="latest__divider"></div>
+		
+								<div class="latest__meta">
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+										<p>10K mi</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+										<p>Automatic</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+										<p>Gasoline</p>
+									</div>
+								</div>
+							</div>
+		
+							<div class="latest__cards__items">
+								<div class="latest__badge-used">
+									<p>Usado</p>
+								</div>
+		
+								<img src="./assets/img/latest-cars/nissan.png" alt="" />
+		
+								<div class="latest__items__info">
+									<div class="latest__car__info">
+										<p class="latest__car__year">2019</p>
+										<p class="latest__car__name">Nissan 370Z Nismo</p>
+										<p class="latest__car__price">$37,900</p>
+		
+										<div class="latest__car__location">
+											<img src="./assets/img/latest-cars/pin.svg" alt="" />
+											<p>New York</p>
+										</div>
+									</div>
+		
+									<div class="latest__items__compare">
+										<input id="checkbox-compare3" type="checkbox" />
+										<label for="checkbox-compare3">Compare</label>
+									</div>
+								</div>
+		
+								<div class="latest__divider"></div>
+		
+								<div class="latest__meta">
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/dashboard.svg" alt="" />
+										<p>16K mi</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/transmission.svg" alt="" />
+										<p>Automatic</p>
+									</div>
+		
+									<div class="latest__meta__item">
+										<img src="./assets/img/latest-cars/fuel.svg" alt="" />
+										<p>Diesel</p>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="latest__bottom">
+							<span class="latest__bottom-rigth"></span>
+							<span class="latest__bottom-middle"></span>
+							<span class="latest__bottom-left"></span>
+						</div>
+					</div>
+		
+					<div class="lattest__div-left">
+						<img src="./assets/img/latest-cars/next.svg" alt="">
+					</div>
+				</section>
+
+				<section class="banner">
+					<div class="banner-top">
+						<div class="banner-top-right">
+							<h2>Loren ipsun</h2>
+							<p>Loren ipsun site amet</p>
+							<button>Ir para loja</button>
+						</div>
+
+						<div class="products">
+							<a href="#">
+								<img src="./assets/img/banners/bancos.png" alt="">
+								<p class="product-items">Bancos</p>
+							</a>
+
+							<a href="#">
+								<img src="./assets/img/banners/pneus.png" alt="">
+								<p class="product-items">Pneus</p>
+							</a>
+
+							<a href="#">
+								<img src="./assets/img/banners/rodas.png" alt="">
+								<p class="product-items">Rodas</p>
+							</a>
+
+							<a href="#">
+								<img src="./assets/img/banners/acessorios.png" alt="">
+								<p class="product-items">Acessorios</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="banner__buttons">
+						<div class="banner__buttons-item banner__buttons-previous"></div>
+
+						<div class="banner__buttons-item banner__buttons-next"></div>
+					</div>
+				</section>
+
+				<section class="app">
+					<div class="apps">
+						<div>
+							<h2>Baixe o nosso app</h2>
+						</div>
+
+						<div>
+							<p>
+								Baixe o Finder App e junte-se à comunidade de entusiastas de carros. Não pare sua busca de carro quando sair do computador com nosso aplicativo para Android e iOS!
+							</p>
+						</div>
+
+						<div class="btns">
+							<a id="app-store" href="https://www.apple.com/br/app-store/" target="_blank">
+								<img src="./assets/img/apps/app-store.png" alt="">
+							</a>
+
+							<a id="google-play" href="https://play.google.com/" target="_blank">
+								<img src="./assets/img/apps/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="ilustration">
+						<img src="./assets/img/apps/illustration.png" alt="">
+
+					</div>
+
+				</section>
+				
+				<section class="blog">
+					<div class="blog-top">
+						<h2>Ultimas novidades</h2>
+						<a href="#">
+							Ir para o blog
+							<img src="/assets/img/blog/arrow.svg" alt="">
+						</a>
+					</div>
+
+					<div class="blog-cards">
+						<div class="cards-blog">
+							<img src="./assets/img/blog/fusca.png" alt="">
+
+							<div class="title">
+								<h4>Dicas</h4>
+								<p>Loren ipsuns</p>
+							</div>
+
+							<div class="author">
+								<img src="./assets/img/blog/jacob.svg" alt="">
+
+								<div class="author-info">
+									<div class="author-name">
+										Jacob Jones
+									</div>
+									<img class="author-date" src="./assets/img/blog/date1.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="cards-blog">
+							<img src="./assets/img/blog/traseira-carro.png" alt="">
+
+							<div class="title">
+								<h4>OFERTAS</h4>
+								<p>Loren ipsuns</p>
+							</div>
+
+							<div class="author">
+								<img src="./assets/img/blog/annette.svg" alt="">
+
+								<div class="author-info">
+									<div class="author-name">
+										Annette Black
+									</div>
+									<img class="author-date" src="./assets/img/blog/date2.svg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="cards-blog">
+							<img src="./assets/img/blog/moto.png" alt="">
+
+							<div class="title">
+								<h4>OFERTAS</h4>
+								<p>Loren ipsuns</p>
+							</div>
+
+							<div class="author">
+								<img src="./assets/img/blog/ralph.svg" alt="">
+
+								<div class="author-info">
+									<div class="author-name">
+										Ralph Edwards
+									</div>
+									<img class="author-date" src="./assets/img/blog/date3.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main> 
+		</div>
+			<footer>
+				<div class="footer-top">
+					<div class="logo-dark">
+						<img src="./assets/img/footer/logo-finder.png" alt="" />
+					</div>
+
+					<div class="lang-location">
+						<div class="lang">
+							<img src="./assets/img/footer/world.svg" alt="" />
+							<p>pt-BR</p>
+						</div>
+
+						<div class="location">
+							<img src="./assets/img/footer/pin.svg" alt="" />
+							<p>São Paulo</p>
+						</div>
+					</div>
 				</div>
-			</div>
-		</footer>
+
+				<div class="divider"></div>
+
+				<div class="footer-informations">
+					<div class="subscribe">
+						<h2>Cadastre-se na newletter</h2>
+						
+						<p>Não perca nenhuma oferta relevante!</p>
+
+						<div class="input-group">
+							<label for="send-email">
+								<img src="/assets/img/footer/email-input.svg" alt="">
+							</label>
+							<input id="send-email" type="text" placeholder="Informe seu email" />
+
+							<button>
+								<img src="./assets/img/footer/btn.svg" alt="icone enviar">
+							</button>	
+						</div>
+					</div>
+
+					<section class="buy-sell">
+						<h3>Comprar ou Vender</h3>
+
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="about">
+						<h3>Sobre</h3>
+
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="profile">
+						<h3>Perfil</h3>
+
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+
+								<li>
+									<a href="#">Loren ipsum</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="contacts-social">
+						<div class="contacts">
+							<a id="phone" href="fone:+551111111111">
+								<img src="./assets/img/footer/phone.svg" alt="icone telefone" />
+								(11) 1111-1111
+							</a>
+
+							<a id="email" href="mailto:email@example.com.br">
+								<img src="./assets/img/footer/mail.svg" alt="icone email" />
+								email@example.com.br
+							</a>
+						</div>
+
+						<div class="social">
+							<a id="facebook" class="social-item" href="#">
+							</a>
+		
+							<a id="twitter" class="social-item" href="#">
+							</a>
+		
+							<a id="telegram" class="social-item" href="#">
+							</a>
+
+							<a id="messenger" class="social-item"  href="#">
+							</a>
+						</div>
+					</section>
+				</div>
+
+				<div class="footer-bottom">
+					<p>
+						Copyright © Finder | Gama Academy. Todos os direitos reservados - Este é um projeto acadêmico.
+					</p>
+
+					<div class="menu-secondary">
+						<a href="#">Termos de uso</a>
+						<a href="#">Política de privacidade</a>
+					</div>
+				</div>
+			</footer>
+		
     </body>
 </html>

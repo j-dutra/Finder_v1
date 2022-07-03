@@ -1,7 +1,14 @@
-header {
-    max-width: 129.6rem;
-    width: 100%;
-    height: 70.3rem;
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 header .text-img {
@@ -12,7 +19,7 @@ header .text-img {
 header .text-img  h1{
     width: 52.6rem;
     height: 14.6rem;
-    
+
     font-weight: 700;
     font-size: 5.6rem;
     line-height: 130%;
@@ -32,35 +39,21 @@ header .text-img  p {
     opacity: 0.7;
 }
 
-header .text-img #orange-car {
-    width: 74.6rem;
-    height: 41.6rem;
-}
-
 header .tabs {
-
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-
-    width: 16.4rem;
-    height: 4.0rem;
-
-    margin-bottom: 2.4rem;
+    margin: 2.4rem 0;
+    gap: 1.2rem;
 }
 
 header .tabs button {
-    width: 7.2rem;
-    height: 4.0rem;
+    padding: .8rem 1.6rem;
     border-radius: .8rem;
-
     font-weight: 400;
     font-size: 1.6rem;
 }
 
 header .tabs #new {
-    width: 7.2rem;
-
     color: #fff;
     background: rgba(255, 255, 255, 0.04);
 
@@ -70,95 +63,163 @@ header .tabs #new {
     line-height: 150%;
 }
 
-header .tabs #new:hover {
-    color: #FD5631;
-    background: #fff;
-    transition: .500;
-}
-
 header .tabs #used {
     width: 8.0rem;
     background: rgba(255, 255, 255, 0.04);
 }
 
+header .tabs #new:hover,
 header .tabs #used:hover {
-    background: #fff;
     color: #FD5631;
+    background: #fff;
     transition: .500;
 }
 
-header label {
-    height: 2.4rem;
-
-    /* Font */
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 150%;
-    opacity: 0.5;
-}
-
-select {
-    border: none;
-    background: transparent;
-    opacity: 0.5;
-}
-
-/* input-group */
-header .input-group {
-
+header .header__input-group .form {
     width: 100%;
-    height: 6.8rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding: .8rem 0;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);
-
+    border-radius: .8rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 8px;
-}
-
-header .input-group form {
-    width:100%;
-
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    padding-left: 2.0rem;
 }
 
-.header__input-group__divider {
-    width: 40px;
-    height: 0px;
-    opacity: 0.15;
-    border: 1px solid #FFFFFF;
-    transform: rotate(90deg);    
-}
-
-header .input-group input {
+header .header__input-group .form-item {
     width: 16.2rem;
-    margin: 0.8rem;
+    margin: .8rem;
     background-color: transparent;
     border: none;
+    outline: none;
+    padding-left: 3.5rem;
 }
 
-header .input-group #submit {
+header .header__input-group #submit {
     width: 14.2rem;
     height: 5.2rem;
     background: #FD5631;
     border-radius: .8rem;
     opacity: 1;
+    border: none;
+    margin-right: .8rem;
 }
 
-header .input-group img {
-    opacity: 0.5;
+header .header__input-group #submit:hover {
+    background: #7d3833;
+} 
+
+header .header__input-group .search-label::before{
+    content: " ";
+    width: 1.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background: url(/assets/img/header/search.svg);
+    background-repeat: no-repeat;
+    padding: 0 1.0rem;
+    position: absolute;
+    background-position: center;
 }
 
-header .input-group #submit:hover {
-    opacity: 0.4;
+header .header__input-group .make-label::before{
+    content: " ";
+    width: 1.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background: url(/assets/img/header/star.svg);
+    background-repeat: no-repeat;
+    padding: 0 1.0rem;
+    position: absolute;
+    background-position: center;
+}
+
+header .header__input-group .model-label::before{
+    content: " ";
+    width: 1.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background: url(/assets/img/header/list.svg);
+    background-repeat: no-repeat;
+    padding: 0 1.0rem;
+    position: absolute;
+    background-position: center;
+}
+
+header .header__input-group .type-label::before{
+    content: " ";
+    width: 1.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background: url(/assets/img/header/car.svg);
+    background-repeat: no-repeat;
+    padding: 0 1.0rem;
+    position: absolute;
+    background-position: center;
+}
+
+header .header__input-group .location-label::before{
+    content: " ";
+    width: 1.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background: url(/assets/img/header/pin.svg);
+    background-repeat: no-repeat;
+    padding: 0 1.0rem;
+    position: absolute;
+    background-position: center;
+}
+
+header .header__input-group .form-label:nth-child(-n+4)::after {
+    content: " ";
+    width: .2rem;
+    height: 4.0rem;
+    display: inline-block;
+    background: #6f6d6f;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    header .text-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .text-img h1 {
+        width: 100%;
+        height: 10rem; 
+        font-weight: 700;
+        font-size: 3.4rem;
+        line-height: 130%;
+    }
+    
+    header .text-img p {
+        width: 100%;
+        height: 5rem; 
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        opacity: 0.7;
+    }
+
+    header .text-img #orange-car {
+        height: auto;
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    header .header__input-group .form {
+        flex-direction: column;
+        gap: 2.0rem;
+    }
+
+    header .header__input-group .form-label, 
+    header .header__input-group .form-item {
+        width: 95%;
+    }
+
+    header .header__input-group .form-label:nth-child(-n+4)::after {
+        display: none;
+    }
 }

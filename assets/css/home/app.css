@@ -1,5 +1,5 @@
 .app {
-    width: 107.6rem;
+    /* width: 107.6rem; */
     height: 44.0rem;
 
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .apps h2 {
-    width: 28.5rem;
+    /* width: 28.5rem; */
     height: 4.2rem;
 
     /* Font */;
@@ -30,7 +30,7 @@
 }
 
 .apps p {
-    width: 526px;
+    /* width: 526px; */
     height: 81px;
     
     /* Font */
@@ -62,4 +62,13 @@
 .ilustration {
     width: 46.0rem;
     height: 44.0rem;
+}
+
+@media screen and (max-width: 600px) {
+    .app {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
 }
