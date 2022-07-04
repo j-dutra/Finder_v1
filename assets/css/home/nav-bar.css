@@ -38,8 +38,6 @@ nav .logo-menu .menu{
     flex-direction: row;
     align-items: center;
 
-    gap: 32px;
-
     width: 51.3rem;
     height: 2.4rem;
     top: calc(50% - 24px/2);
