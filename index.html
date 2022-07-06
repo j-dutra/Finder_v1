@@ -52,6 +52,9 @@
 		<link rel="stylesheet" href="./assets/css/home/blog.css">
 		<link rel="stylesheet" href="./assets/css/home/footer.css">
 
+		<!-- import scripts -->
+		<script defer src="/js/scripts.js"></script>
+
 		<!-- Hotjar Tracking Code for https://finderv1.vercel.app/ -->
 		<script>
 			(function(h,o,t,j,a,r){
@@ -141,26 +144,34 @@
 						</label>
 
 						<label for="make" class="make-label form-label">
-							<select class="form-item" name="make" id="">
+							<select  class="form-item" name="make" id="">
 								<option value="Marca" disabled selected>Marca</option>
+								<option class="brands" value="">
+								</option>
 							</select>
 						</label>
 
 						<label for="model" class="model-label form-label">
 							<select class="form-item" name="model" id="">
 								<option value="Modelo" disabled selected>Modelo</option>
+								<option class="models" value="">
+								</option>
 							</select>
 						</label>
 
 						<label for="type" class="type-label form-label">
 							<select class="form-item" name="type" id="">
 								<option value="Tipo" disabled selected>Tipo</option>
+								<option class="types" value="">
+								</option>
 							</select>
 						</label>
 
 						<label for="location" class="location-label form-label">
 							<select class="form-item" name="location" id="">
 								<option value="Local" disabled selected>Local</option>
+								<option class="locations" value="">
+								</option>
 							</select>
 						</label>
 						<input type="submit" id="submit"   value="Pesquisar" >
