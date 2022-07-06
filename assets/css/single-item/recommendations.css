@@ -1,0 +1,427 @@
+.Recommendations {
+    width: 139.2rem;
+    height: 71.9rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 4.8rem 0;
+}
+
+.Recommendations__div-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Recommendations__div-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Recommendations__div-midlle {
+    width: 129.6rem;
+    height: 58.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Recommendations__top {
+    width: 129.6rem;
+    height: 3.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__top__h2 {
+    width: 100%;
+    height: 3.6rem;
+
+    display: flex;
+    align-items: center;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 130%;
+}
+
+.Recommendations__top__tabsLink {
+    width: 26.9rem;
+    height: 3.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__top__tabs {
+    width: 15.3rem;
+    height: 3.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__tabs__new {
+
+    width: 6.7rem;
+    height: 3.6rem;
+
+    display: flex;
+    padding: .8rem 1.6rem;
+
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: .8rem;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.top__tabs__new:hover {
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+
+    transition: .300;
+
+    color: #FD5631;
+}
+
+.top__tabs__used {
+    width: 7.4rem;
+    height: 3.7rem;
+
+    display: flex;
+    padding: .8rem 1.6rem;
+
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+    border-radius: .8rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.rem;
+    line-height: 150%;
+}
+
+.top__tabs__used:hover {
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+
+    transition: .300;
+
+    color: #FD5631;
+}
+
+.Recommendations__top__link {
+    width: 10.0rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0.7;
+}
+
+.Recommendations__top__link:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.Recommendations__top__link p {
+    width: 7.2rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.Recommendations__cards {
+    width: 129.6rem;
+    height: 48.0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__cards__items {
+    position: relative;
+    width: 41.6rem;
+    height: 48.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1.2rem;
+
+    padding-bottom: 20px;
+}
+
+.Recommendations__badge-new {
+    position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #FDBC31;;
+    border-radius: .6rem;
+}
+
+.Recommendations__badge-used {
+    position: absolute;
+
+    width: 5.4rem;
+    height: 2.4rem;
+    left: 2.0rem;
+    top: 2.0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem 1.0rem .2rem;
+
+    background: #3C76F2;
+    border-radius: .6rem;
+}
+
+.Recommendations__cards__items:hover {
+    width: 41.6rem;
+    height: 48.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1.2rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding-bottom: 20px;
+}
+
+.Recommendations__cards__items img {
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.Recommendations__items__info {
+    width: 37.5rem;
+    height: 10.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Recommendations__car__info {
+    width: 27.5rem;
+    height: 10.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Recommendations__car__year {
+    width: 3.3rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.Recommendations__car__name {
+    width: 27.5rem;
+    height: 2.7rem;
+
+    /* Font */;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
+
+.Recommendations__car__price {
+    width: 6.0rem;
+    height: 2.4rem;
+
+    /* Font */
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    color: #FD5631;
+}
+
+.Recommendations__car__location {
+    display: flex;;
+    align-items: center;
+    gap: 4px;
+
+    width: 10.1rem;
+    height: 2.1rem;
+}
+
+.Recommendations__car__location p {
+    width: 7.9rem;
+    height: 2.1rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+    opacity: 0.7;
+}
+
+.Recommendations__items__compare {
+    width: 8.3rem;
+    height: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__items__compare input {
+    display: none;
+}
+
+.Recommendations__items__compare label {
+    display: flex;
+    align-items: center;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.Recommendations__items__compare input + label:before {
+    content: '';
+    width:1.3rem;
+    height: 1.3rem;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .2rem;
+    margin-right: .7rem;
+}
+
+.Recommendations__items__compare input:checked + label:before {
+    background-color: white;
+    opacity: 0.7;
+}
+
+
+.Recommendations__divider {
+    width: 37.5rem;
+    opacity: 0.15;
+    border: 1px solid #FFFFFF;
+}
+
+.Recommendations__meta {
+    width: 37.5rem;
+    height: 6.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__meta__item {
+    width: 11.7rem;
+    height: 6.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #1F1B2D;
+    opacity: 0.5;
+    border-radius: .8rem;
+}
+
+.Recommendations__meta__item p {
+    height: 1.8rem;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.Recommendations__bottom {
+    width: 8.0rem;
+    height: .6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Recommendations__bottom-rigth {
+    width: 1.6rem;
+    height: .6rem;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+
+    opacity: 0.4;
+}
+
+.Recommendations__bottom-middle {
+    width: 3.2rem;
+    height: .6rem;
+
+    background: #FFFFFF;
+    border-radius: 4.0rem;
+}
+
+.Recommendations__bottom-left {
+    width: 1.6rem;
+    height: .6rem;
+
+    background: #FFFFFF;
+    border-radius: 4.0rem;
+
+    opacity: 0.4;
+}
