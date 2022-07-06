@@ -238,6 +238,11 @@
     border-radius: 1.2rem 1.2rem 0 0;
 }
 
+.latest__cards__items .img-item {
+    width:416px; 
+    height:241px;
+}
+
 .latest__items__info {
     width: 37.5rem;
     height: 10.5rem;
@@ -295,12 +300,12 @@
     align-items: center;
     gap: 4px;
 
-    width: 10.1rem;
+    width: 16.1rem;
     height: 2.1rem;
 }
 
 .latest__car__location p {
-    width: 7.9rem;
+    width: 10.9rem;
     height: 2.1rem;
 
     /* Font */

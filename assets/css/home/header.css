@@ -178,6 +178,10 @@ header .header__input-group .form-label:nth-child(-n+4)::after {
     position: absolute;
 }
 
+header .header__input-group .option-response {
+    color: #93919a;
+}
+
 @media screen and (max-width: 600px) {
     header .text-img {
         display: flex;

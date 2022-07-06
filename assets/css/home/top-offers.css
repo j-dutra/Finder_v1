@@ -72,6 +72,16 @@
     border-radius: 1.2rem 1.2rem 0 0;
 }
 
+.offers__cards-vertical .img-first-item {
+    width: 636px;
+    height: 236px;
+}
+
+.offers__cards-horizontal .img-second-item {
+    width: 260px;
+    height: 239px;
+}
+
 .offers__car-info-compare {
     width: 59.6rem;
     height: 10.5rem;
