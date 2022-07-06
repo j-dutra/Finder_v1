@@ -1,0 +1,94 @@
+.gallery {
+    position: relative;
+    width: 74.6rem;
+    height: 53.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__main-image {
+    width: 74.6rem;
+    height: 42.0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-main__previous {
+    position: absolute;
+    margin-left: 1.6rem;
+
+    width: 3.6rem;
+    height: 3.6rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
+    border-radius: 50%;
+
+    background-image: url(../../img/single-car/previous.svg);
+}
+
+.gallery__image-previews ul {
+    width: 74.4rem;
+    height: 10.0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gallery-main__next {
+    position: absolute;
+    right: 0;
+    margin-right: 1.6rem;
+
+    width: 3.6rem;
+    height: 3.6rem;
+
+    background-image: url(../../img/single-car/next.svg);
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
+    border-radius: 50%;
+}
+
+.gallery__image-previews__item {
+    width: 13.6rem;
+    height: 10.0rem;
+}
+
+#play-video {
+    width: 13.6rem;
+    height: 10.0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: .8rem;
+}
+
+#play-video img {
+    width: 2.0rem;
+    height: 2.0rem;
+
+    margin-bottom: 1.0rem;
+}
+
+#play-video p {
+    width: 76px;
+    height: 24px;
+
+    /* Font */
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    opacity: 0.7;
+}
