@@ -82,23 +82,23 @@
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="#">Novos</a>
+						<a href="#latest">Novos</a>
 					</li>
 
 					<li>
-						<a href="#">Usados</a>
+						<a href="/assets/catalog.html">Usados</a>
 					</li>
 
 					<li>
-						<a href="#">Vender</a>
+						<a href="/assets/catalog.html">Vender</a>
 					</li>
 
 					<li>
-						<a href="#">Comprar</a>
+						<a href="/index.html#offers">Comprar</a>
 					</li>
 
 					<li>
-						<a href="#">Novidades e Reviews</a>
+						<a href="/index.html#blog">Novidades e Reviews</a>
 					</li>
 				</ul>
 			</div>
@@ -135,38 +135,17 @@
 			<div class="body-type">
 				<h3>Tipo</h3>
 
-				<form action="">
-					<input type="checkbox" id="body-type__input1" >
-					<label for="body-type__input1">Sedan</label>
-	
-					<input type="checkbox" id="body-type__input2">
-					<label for="body-type__input2">SUV</label>
-	
-					<input type="checkbox" id="body-type__input3">
-					<label for="body-type__input3">Wagon</label>
-
-					<input type="checkbox" id="body-type__input4">
-					<label for="body-type__input4">Crossover</label>
-
-					<input type="checkbox" id="body-type__input5">
-					<label for="body-type__input5">Coupe</label>
-
-					<input type="checkbox" id="body-type__input6">
-					<label for="body-type__input6">Pickup</label>
+				<form action="" id="catalogTypes">
 				</form>
 			</div>
 
 			<div class="make-model">
 				<h3>Marca e modelo</h3>
 
-				<div class="make-model__select">
-					<label for="Marca">Marca</label>
-					<select name="" id="Marca" style="background-color: transparent; border: none;"></select>
+				<div class="make-model__select" id="catalogMake">
 				</div>
 
-				<div class="make-model__select">
-					<label for="Marca">Modelo</label>
-					<select name="" id="Marca" style="background-color: transparent; border: none;"></select>
+				<div class="make-model__select" id="catalogModel">
 				</div>
 			</div>
 
@@ -174,16 +153,22 @@
 				<h3>Ano</h3>
 
 				<div class="year-select">
-					<div class="year-select__itens">
-						<label for="">Todos</label>
-						<select name="" id=""></select>
+					<div class="year-select__itens" id="allYear">
 					</div>
 
 					<div class="year-select__divider"></div>
 
-					<div class="year-select__itens">
-						<label for="">Todos</label>
-						<select name="" id=""></select>
+					<div class="year-select__itens" id="allYear">
+						<select name="" id="">
+							<option class="option-response" value="Todos" disabled selected>Todos</option>
+							<option class="option-response" value="">2022</option>
+							<option class="option-response" value="">2021</option>
+							<option class="option-response" value="">2020</option>
+							<option class="option-response" value="">2019</option>
+							<option class="option-response" value="">2018</option>
+							<option class="option-response" value="">2017</option>
+							<option class="option-response" value="">2008</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -193,34 +178,46 @@
 
 				<div class="year-select">
 					<div class="price-select__itens">
-						<label for="">Todos</label>
-						<select name="" id=""></select>
+						<select name="" id="">
+							<option class="option-response" value="Todos" disabled selected>De</option>
+							<option class="option-response" value="">De R$ 50.000</option>
+							<option class="option-response" value="">De R$ 70.000</option>
+							<option class="option-response" value="">De R$ 90.000</option>
+							<option class="option-response" value="">De R$ 110.000</option>
+							<option class="option-response" value="">De R$ 130.000</option>
+						</select>
 					</div>
 
 					<div class="year-select__divider"></div>
 
 					<div class="price-select__itens">
-						<label for="">Todos</label>
-						<select name="" id=""></select>
+						<select name="" id="">
+							<option class="option-response" value="Todos" disabled selected>Até</option>
+							<option class="option-response" value="">Até R$ 50.000</option>
+							<option class="option-response" value="">Até R$ 70.000</option>
+							<option class="option-response" value="">Até R$ 90.000</option>
+							<option class="option-response" value="">Até R$ 110.000</option>
+							<option class="option-response" value="">Até R$ 130.000</option>
+						</select>
 					</div>
 				</div>
 
-				<div class="toggle">
+				<!-- <div class="toggle">
 					<input type="">
-				</div>
+				</div> -->
 			</div>
 
 			<div class="drive-type">
 				<h3>Tipo do carro</h3>
 
 				<form action="" class="drive-type__form">
-					<input type="checkbox" class="drive-type__form_item" id="drive-type__form__input1">
+					<input type="checkbox" class="drive-type__form_item" name="drive-type__form__input1">
 					<label for="drive-type__form__input1">AWD/4WD</label>
 
-					<input type="checkbox" class="drive-type__form_item" id="drive-type__form__input2">
+					<input type="checkbox" class="drive-type__form_item" name="drive-type__form__input2">
 					<label for="drive-type__form__input2">Front Wheel Drive</label>
 
-					<input type="checkbox" class="drive-type__form_item" id="drive-type__form__input3">
+					<input type="checkbox" class="drive-type__form_item" name="drive-type__form__input3">
 					<label for="drive-type__form__input3">Rear Wheel Drive</label>
 				</form>
 			</div>
@@ -228,75 +225,28 @@
 			<div class="fuel-type">
 				<h3>Combustível</h3>
 
-				<form action="" class="fuel-type__form">
-					<input type="checkbox" name="" id="fuel-type__form__inpt1">
-					<label for="fuel-type__form__inpt1">Diesel</label>
-
-					<input type="checkbox" name="" id="fuel-type__form__inpt2">
-					<label for="fuel-type__form__inpt2">Electric</label>
-
-					<input type="checkbox" name="" id="fuel-type__form__inpt3">
-					<label for="fuel-type__form__inpt3">Gasoline</label>
-
-					<input type="checkbox"" name="" id="fuel-type__form__inpt4">
-					<label for="fuel-type__form__inpt4">Hybrid</label>
-
-					<input type="checkbox"" name="" id="fuel-type__form__inpt5">
-					<label for="fuel-type__form__inpt5">Hydrogen</label>
-
-					<input type="checkbox"" name="" id="fuel-type__form__inpt6">
-					<label for="fuel-type__form__inpt6">Plug-in Hybrid</label>
+				<form action="" class="fuel-type__form" id="catalogFuel">
 				</form>
 			</div>
 
 			<div class="transmission">
 				<h3>Transmissão</h3>
 
-				<form action="" class="transmission__form">
-					<input type="checkbox" id="transmission__form__inp1">
-					<label for="transmission__form__inp1">Automatic</label>
-
-					<input type="checkbox" id="transmission__form__inp2">
-					<label for="transmission__form__inp2">Manual 5 Speed</label>
-
-					<input type="checkbox" id="transmission__form__inp3">
-					<label for="transmission__form__inp3">Manual 6 Speed</label>
-
-					<input type="checkbox" id="transmission__form__inp4">
-					<label for="transmission__form__inp4">Manual 7 Speed</label>
+				<form action="" class="transmission__form" id="catalogTransmission">
 				</form>
 			</div>
 
 			<div class="mileage">
 				<h3>Kilomentragem</h3>
 
-				<div class="mileage__form">
-					<label for="mileage-select">Any</label>
-					<select name="" id="mileage-select"></select>
+				<div class="mileage__form" id="catalogMileage">
 				</div>
 			</div>
 
 			<div class="color">
 				<h3>Cor</h3>
 
-				<form action="" class="color__form">
-					<input type="text" id="color__form__item1">
-					<label for="color__form__item1">Preto</label>
-
-					<input type="text" id="color__form__item2">
-					<label for="color__form__item2">Azul</label>
-
-					<input type="text" id="color__form__item3">
-					<label for="color__form__item3">Marrom</label>
-
-					<input type="text" id="color__form__item4">
-					<label for="color__form__item4">Dourado</label>
-
-					<input type="text" id="color__form__item5">
-					<label for="color__form__item5">Prata</label>
-
-					<input type="text" id="color__form__item6">
-					<label for="color__form__item6">Amarelo</label>
+				<form action="" class="color__form" id="catalogColors">
 				</form>
 			</div>
 
@@ -333,8 +283,8 @@
 			</header>
 
 			<section class="catalog">
-				<div class="catalog__cards__items">
-					<div class="catalog__badge-used">
+				<div class="catalog__cards__items" id="catalogCard">
+					<!-- <div class="catalog__badge-used">
 						<p>Usado</p>
 					</div>
 
@@ -375,11 +325,11 @@
 							<img src="./img/catalog/fuel.svg" alt="" />
 							<p>Diesel</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="catalog__cards__items">
-					<div class="catalog__badge-used">
+				<div class="catalog__cards__items" id="catalogCard2">
+					<!-- <div class="catalog__badge-used">
 						<p>Usado</p>
 					</div>
 
@@ -420,11 +370,11 @@
 							<img src="./img/catalog/fuel.svg" alt="" />
 							<p>Petrol</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="catalog__cards__items">
-					<div class="catalog__badge-used">
+				<div class="catalog__cards__items" id="catalogCard3">
+					<!-- <div class="catalog__badge-used">
 						<p>Usado/p>
 					</div>
 
@@ -465,11 +415,11 @@
 							<img src="./img/catalog/fuel.svg" alt="" />
 							<p>Petrol</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="catalog__cards__items">
-					<div class="catalog__badge-used">
+				<div class="catalog__cards__items" id="catalogCard4">
+					<!-- <div class="catalog__badge-used">
 						<p>usado</p>
 					</div>
 
@@ -510,11 +460,11 @@
 							<img src="./img/catalog/fuel.svg" alt="" />
 							<p>Diesel</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="catalog__cards__items">
-					<div class="catalog__badge-new">
+				<div class="catalog__cards__items" id="catalogCard5">
+					<!-- <div class="catalog__badge-new">
 						<p>Novo</p>
 					</div>
 
@@ -555,7 +505,7 @@
 							<img src="./img/catalog/fuel.svg" alt="" />
 							<p>Gasoline</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 				<div class="catalog__cards__items">

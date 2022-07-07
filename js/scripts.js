@@ -91,7 +91,6 @@ function getFormItens() {
 }
 
 getFormItens();
-// FIM - ITENS DO FORMULÁRIO
 
 
 // INÍCIO - OFERTAS
@@ -110,7 +109,7 @@ function getOffers() {
                 (elemento, index) =>
                     `
                     <div key="${index}" class="offers__cards-vertical offers__cards-hover">
-                        <div class="offers__badge-used">
+                        <div class="offers__badge-new">
                             <p>${elemento.condition.value}</p>
                         </div>
                         
@@ -294,7 +293,6 @@ function getOffers() {
 }
 
 getOffers();
-// FIM - OFERTAS
 
 
 // INÍCIO - ÚLTIMOS PUBLICADOS
@@ -311,8 +309,7 @@ function getLatest() {
                 .map(
                     (elemento, index) =>
                     `
-                    <div key="${index}" class="latest__cards__items">
-                        <div  class="latest__badge-new">
+                        <div key="${index}" class="latest__badge-used>
                             <p>Usado</p>
                         </div>
 
@@ -356,8 +353,6 @@ function getLatest() {
                                 <p>${elemento.fuel.value}</p>
                             </div>
                         </div>
-                    </div>
-                    
                     `
                 )
                 .join("")}`;
@@ -373,8 +368,7 @@ function getLatest() {
                 .map(
                     (elemento, index) =>
                     `
-                    <div key="${index}" class="latest__cards__items">
-                        <div  class="latest__badge-new">
+                        <div key="${index}" class="latest__badge-used">
                             <p>Usado</p>
                         </div>
 
@@ -418,8 +412,6 @@ function getLatest() {
                                 <p>${elemento.fuel.value}</p>
                             </div>
                         </div>
-                    </div>
-                    
                     `
                 )
                 .join("")}`;
@@ -435,8 +427,7 @@ function getLatest() {
                 .map(
                     (elemento, index) =>
                     `
-                    <div key="${index}" class="latest__cards__items">
-                        <div  class="latest__badge-new">
+                        <div key="${index}" class="latest__badge-used">
                             <p>Usado</p>
                         </div>
 
@@ -480,8 +471,6 @@ function getLatest() {
                                 <p>${elemento.fuel.value}</p>
                             </div>
                         </div>
-                    </div>
-                    
                     `
                 )
                 .join("")}`;
@@ -491,4 +480,470 @@ function getLatest() {
 }
 
 getLatest();
-// FIM - ÚLTIMOS PUBLICADOS
+
+
+// INÍCIO - PÁGINA DE CATALOGO
+function getCatalogItens () {
+    let catalogTypes = document.querySelector('#catalogTypes'),
+    catalogMake = document.querySelector('#catalogMake'),
+    catalogModel = document.querySelector('#catalogModel'),
+    catalogFuel = document.querySelector('#catalogFuel'),
+    catalogTransmission = document.querySelector('#catalogTransmission'),
+    catalogMileage = document.querySelector('#catalogMileage'),
+    catalogColors = document.querySelector('#catalogColors'),
+    allYear = document.querySelector('#allYear'),
+    catalogCard = document.querySelector('#catalogCard'),
+    catalogCard2 = document.querySelector('#catalogCard2'),
+    catalogCard3 = document.querySelector('#catalogCard3'),
+    catalogCard4 = document.querySelector('#catalogCard4'),
+    catalogCard5 = document.querySelector('#catalogCard5');
+
+    function getInputTypes() {
+        fetch("https://e-carros-api.herokuapp.com/cartype")
+         .then((res) => res.json())
+         .then((response) => {
+            catalogTypes.innerHTML = `${response
+             .map(
+             (elemento, index) =>
+             `
+                <input key="${index}" value="${elemento.value}" name="${elemento}" type="checkbox" />
+                <label for="${elemento}">${elemento.value}</label>  
+             `
+             )
+             .join("")}`;
+        });
+    }  
+    getInputTypes();
+
+    function getSelectMakes() {
+        fetch("https://e-carros-api.herokuapp.com/brands")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogMake.innerHTML = `
+                    <select name="" id="Marca" style="background-color: transparent; border: none; width: 100%;">
+						<option value="Marca" disabled selected>Marca</option>
+                ${response
+                .map(
+                (elemento, index) =>
+                `
+                        <option class="option-response" key="${index}" value="${elemento.name}"> ${elemento.name} </option>
+                `
+                )
+                .join("")}
+                    </select>
+                `;
+        });
+    }  
+    getSelectMakes();
+
+    function getSelectModel() {
+        fetch("https://e-carros-api.herokuapp.com/adverts")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogModel.innerHTML = `
+                    <select name="" id="Modelo" style="background-color: transparent; border: none; width: 100%;">
+						<option value="Modelo" disabled selected>Modelo</option>
+                ${response
+                .map(
+                (elemento, index) =>
+                `
+                        <option class="option-response" key="${index}" value="${elemento.model}"> ${elemento.model} </option>
+                `
+                )
+                .join("")}
+                    </select>
+                `;
+        });
+    }  
+    getSelectModel();
+
+    function getSelectYear() {
+        fetch("https://e-carros-api.herokuapp.com/adverts")
+            .then((res) => res.json())
+            .then((response) => {
+                allYear.innerHTML = `
+                    <select name="" id="">
+                        <option class="option-response" value="Todos" disabled selected>Todos</option>
+                ${response
+                .map(
+                (elemento, index) =>
+                `
+                        <option class="option-response" key="${index}" value="${elemento.year}"> ${elemento.year} </option>
+                `
+                )
+                .join("")}
+                    </select>
+                `;
+        });
+    }  
+    getSelectYear();
+
+    function getFuel() {
+        fetch("https://e-carros-api.herokuapp.com/fuel")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogFuel.innerHTML = `${response
+                .map(
+                (elemento, index) =>
+                `
+                    <input key="${index}" value="${elemento.label}" name="${elemento}" type="checkbox" />
+                    <label for="${elemento}">${elemento.label}</label> 
+                `
+                )
+                .join("")}`;
+        });
+    }  
+    getFuel();
+
+    function getTransmission() {
+        fetch("https://e-carros-api.herokuapp.com/transmission")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogTransmission.innerHTML = `${response
+                .map(
+                (elemento, index) =>
+                `
+                    <input key="${index}" value="${elemento.value}" name="${elemento}" type="checkbox" />
+                    <label for="${elemento}">${elemento.value}</label> 
+                `
+                )
+                .join("")}`;
+        });
+    }  
+    getTransmission();
+
+    function getSelectKilometer() {
+        fetch("https://e-carros-api.herokuapp.com/mileage")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogMileage.innerHTML = `
+                    <select name="" id="Modelo" style="background-color: transparent; border: none; width: 100%;">
+						<option value="Modelo" disabled selected>Até --</option>
+                ${response
+                .map(
+                (elemento, index) =>
+                `
+                        <option class="option-response" key="${index}" value="${elemento.value}"> ${elemento.value} </option>
+                `
+                )
+                .join("")}
+                    </select>
+                `;
+        });
+    }  
+    getSelectKilometer();
+
+    function getColors() {
+        fetch("https://e-carros-api.herokuapp.com/colors")
+         .then((res) => res.json())
+         .then((response) => {
+            catalogColors.innerHTML = `${response
+             .map(
+             (elemento, index) =>
+             `
+                <input key="${index}" value="${elemento.value}" name="${elemento}" type="checkbox" />
+                <label for="${elemento}">${elemento.value}</label>  
+             `
+             )
+             .join("")}`;
+        });
+    }  
+    getColors();
+
+    function getCatalogCard() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=1")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-new">
+                            <p>${elemento.condition.value}</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard();
+
+    function getCatalogCard2() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=2")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard2.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>${elemento.condition.value}</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard2();
+
+    function getCatalogCard3() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=3")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard3.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard3();
+
+    function getCatalogCard4() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=4")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard4.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard4();
+
+    function getCatalogCard5() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=5")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard5.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard5();
+}
+
+getCatalogItens();
