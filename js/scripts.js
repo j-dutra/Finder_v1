@@ -496,7 +496,10 @@ function getCatalogItens () {
     catalogCard2 = document.querySelector('#catalogCard2'),
     catalogCard3 = document.querySelector('#catalogCard3'),
     catalogCard4 = document.querySelector('#catalogCard4'),
-    catalogCard5 = document.querySelector('#catalogCard5');
+    catalogCard5 = document.querySelector('#catalogCard5'),
+    catalogCard6 = document.querySelector('#catalogCard6'),
+    catalogCard7 = document.querySelector('#catalogCard7'),
+    catalogCard8 = document.querySelector('#catalogCard8');
 
     function getInputTypes() {
         fetch("https://e-carros-api.herokuapp.com/cartype")
@@ -944,6 +947,183 @@ function getCatalogItens () {
             });
     }
     getCatalogCard5();
+
+    function getCatalogCard6() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=6")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard6.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard6();
+    
+    function getCatalogCard7() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=7")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard7.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard7();
+
+    function getCatalogCard8() {
+        fetch("https://e-carros-api.herokuapp.com/adverts?id=8")
+            .then((res) => res.json())
+            .then((response) => {
+                catalogCard8.innerHTML = `${response
+                .map(
+                    (elemento, index) =>
+                    `
+                        <div key="${index}" class="catalog__badge-used">
+                            <p>Usado</p>
+                        </div>
+
+                        <div class="catalog-img">
+                            <img class="img-responsive img-item" src="${elemento.photos.value}" alt="" width="471px" height="241px" /> 
+                        </div>
+
+                        <div class="catalog__items__info">
+                            <div class="catalog__car__info">
+                                <p class="catalog__car__year">${elemento.year}</p>
+                                <p class="catalog__car__name">${elemento.model}</p>
+                                <p class="catalog__car__price">${elemento.price}</p>
+
+                                <div class="catalog__car__location">
+                                    <img src="./img/catalog/location.svg" alt="" />
+                                    <p>${elemento.location.value}</p>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items__compare">
+                                <input id="checkbox-compare1" type="checkbox" />
+                                <label for="checkbox-compare1">Compare</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog__divider"></div>
+
+                        <div class="catalog__meta">
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/dashboard.svg" alt="" />
+                                <p>${elemento.kilometers}</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/transmission.svg" alt="" />
+                                <p>Automático</p>
+                            </div>
+
+                            <div class="catalog__meta__item">
+                                <img src="./img/catalog/fuel.svg" alt="" />
+                                <p>${elemento.fuel.value}</p>
+                            </div>
+                        </div>
+                    `
+                )
+                .join("")}`;
+            });
+    }
+    getCatalogCard8();
 }
 
 getCatalogItens();
