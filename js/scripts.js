@@ -389,8 +389,8 @@ function getLatest() {
                             </div>
 
                             <div class="latest__items__compare">
-                                <input id="checkbox-compare1" type="checkbox" />
-                                <label for="checkbox-compare1">Compare</label>
+                                <input id="checkbox-compare2" type="checkbox" />
+                                <label for="checkbox-compare2">Compare</label>
                             </div>
                         </div>
 
@@ -448,8 +448,8 @@ function getLatest() {
                             </div>
 
                             <div class="latest__items__compare">
-                                <input id="checkbox-compare1" type="checkbox" />
-                                <label for="checkbox-compare1">Compare</label>
+                                <input id="checkbox-compare3" type="checkbox" />
+                                <label for="checkbox-compare3">Compare</label>
                             </div>
                         </div>
 
@@ -1006,7 +1006,7 @@ function getCatalogItens () {
             });
     }
     getCatalogCard6();
-    
+
     function getCatalogCard7() {
         fetch("https://e-carros-api.herokuapp.com/adverts?id=7")
             .then((res) => res.json())
