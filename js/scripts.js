@@ -492,6 +492,7 @@ function getCatalogItens () {
     catalogMileage = document.querySelector('#catalogMileage'),
     catalogColors = document.querySelector('#catalogColors'),
     allYear = document.querySelector('#allYear'),
+    locations = document.querySelector('#locationsCatalog'),
     catalogCard = document.querySelector('#catalogCard'),
     catalogCard2 = document.querySelector('#catalogCard2'),
     catalogCard3 = document.querySelector('#catalogCard3'),
@@ -517,6 +518,27 @@ function getCatalogItens () {
         });
     }  
     getInputTypes();
+
+    function getLocations() {
+        fetch("https://e-carros-api.herokuapp.com/locale")
+            .then((res) => res.json())
+            .then((response) => {
+                locations.innerHTML = `
+                    <select class="make-model__select" name="Local" id="" style="width: 100%;">
+                        <option value="Local" disabled selected>Escolha o local</option>
+                ${response
+                .map(
+                (elemento, index) =>
+                `
+                        <option class="option-response" key="${index}" value="${elemento.value}"> ${elemento.value} </option>
+                `
+                )
+                .join("")}
+                    </select>
+                `;
+            });
+    }
+    getLocations();
 
     function getSelectMakes() {
         fetch("https://e-carros-api.herokuapp.com/brands")
