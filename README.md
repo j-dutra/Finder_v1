@@ -1,14 +1,28 @@
-# Car Finder
 
-<img src="" alt="img página">
+# Car Finder (Grupo 1)
 
+<img src="./assets/img/car-finder.png" alt="img página">
 
-Em produção .......
+Car Finder, um projeto acadêmico que foi executado no programa Acelerra iCarros_tech, um programa de aceleração de carreiras promovida pela Gama Academy, em parceria com a Icarros (Itaú-Unibanco).
 
-  https://finderv1.vercel.app/
-  
-<p style="text-align: justify;">
-  Car Finder, um projeto acadêmico que está sendo executado no programa Acelerra iCarros_tech, um programa de aceleração de carreiras promovida pela Gama Academy, em parceria com a Icarros (Itaú-Unibanco).
+## Tecnologias Utilizadas para esse projeto
 
-  Um programa imersivo com aulas sincronas e assincronas, com duração de 3 meses, abordando tecnologia como HTML5, CSS3, JavaScript, React, utilizando styled components, context API, pré processadores css com sass, git e metodologias agéis usando scrum/Kanbam entre outras. Aonde os alunos foram separados em squads com o objetivo de entregar ao final do programa dois projetos de um portal, com integração com o uso de uma API, uma versão escrita utilizando HTML, CSS, e JavaScript e uma versão final refatorada utilizando React, styled-components e context-api ....
-</p>
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+
+E pode ser acessado através do link [desse link](https://finderv1.vercel.app/).
+
+## Layout (Figma)
+
+Acesse o layout aqui [desse link](https://www.figma.com/file/FnTOK15dbxgyBC2JqTMEpy/E-carros?node-id=5762%3A29121x).
+
+## API utilizada:
+
+Link de acesso a API [desse link](https://e-carros-api.herokuapp.com/).
+
+## Bord de tarefas (Trello)
+
+Bord de tarefas [desse link](https://trello.com/b/zp1URcPR/kanban).
