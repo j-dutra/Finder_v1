@@ -5,19 +5,6 @@
 
 }
 
-.header-single-item {
-    width: 129.8rem;
-    height: 9.9rem;
-}
-
-.galley-description {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .sidebar {
     width: 52.6rem;
     height: 76.0rem;

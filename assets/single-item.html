@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Google Tag Manager -->
-	    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NFWF8QJ');</script>
-        <!-- End Google Tag Manager -->
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +43,10 @@
         <link rel="stylesheet" href="./css/home/style.css">
         <link rel="stylesheet" href="./css/home/nav-bar.css">
         <link rel="stylesheet" href="./css/single-item/single-item.css">
+        <link rel="stylesheet" href="./css/single-item/single-header.css">
         <link rel="stylesheet" href="./css/single-item/gallery.css">
+        <link rel="stylesheet" href="./css/single-item/single-description.css">
+        <link rel="stylesheet" href="./css/single-item/single-sidebar.css">
         <link rel="stylesheet" href="./css/single-item/recommendations.css">
         <link rel="stylesheet" href="./css/catalog/main.css">
         <link rel="stylesheet" href="./css/home/header.css">
@@ -62,11 +57,6 @@
     </head>
 
     <body>
-        <!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFWF8QJ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-            
         <nav class="nav-bar">
             <div class="logo-menu">
                 <div class="logo-dark">
@@ -113,7 +103,15 @@
 
         <main class="main-single-item">
             <header class="header-single-item">
-                <h2>Mercedes-Benz E 400 Cabriolet</h2>
+                <div class="header-single-item__links">
+                    <a href="../index.html" class="single-item__links_item">Home</a>
+                    <img src="./img/single-car/vector.svg" alt="" class="single-item__links_item">
+                    <a href="./catalog.html" class="single-item__links_item">Usados</a>
+                    <img src="./img/single-car/vector.svg" alt="" class="single-item__links_item">
+                    <a href="." class="single-item__links_item">Onde estou</a>
+                </div>
+
+                <h3>Mercedes-Benz E 400 Cabriolet</h3>
             </header>
 
             <div class="galley-description">
@@ -150,10 +148,90 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="gallery__description">
+                        <div class="gallery__description__specification">
+                            <h4>Especificações</h4>
+
+                            <p> <strong>Ano: </strong>2018 </p>
+                            <p> <strong>Kilome: </strong>25K miles</p>
+                            <p> <strong>Tipo: </strong>Convertible</p>
+                            <p> <strong>Transmissão: </strong>Automático</p>
+                        </div>
+
+                        <div class="gallery__description__banner">
+                            <div>
+                                <img src="./img/single-car/icon1.svg" alt="">
+                                <p>Verificado e certificado pelo Finder</p>
+                            </div>
+
+                            <div>
+                                <img src="./img/single-car/icon2.svg" alt="">
+                                <p>Único dono</p>
+                            </div>
+
+                            <div>
+                                <img src="./img/single-car/icon3.svg" alt="">
+                                <p>Bem equipado</p>
+                            </div>
+
+                            <div>
+                                <img src="./img/single-car/icon4.svg" alt="">
+                                <p>Nenhum acidente/dano relatado</p>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__description__sellers">
+                            <h4>Descrição do vendedor</h4>
+
+                            <p>
+                                Lorem tincidunt lectus vitae id vulputate diam quam. Imperdiet non scelerisque turpis sed etiam ultrices. Blandit mollis dignissim egestas consectetur porttitor. Vulputate dolor pretium, dignissim eu augue sit ut convallis. Lectus est, magna urna feugiat sed ultricies sed in lacinia. Fusce potenti sit id pharetra vel ornare. Vestibulum sed tellus ullamcorper arcu. 
+                            </p>
+
+                            <a href="">Veja mais</a>
+                        </div>
+
+                        <div class="gallery__description__divider"></div>
+
+                        <div class="gallery__description__meta">
+                            <span>Publicado: Abril, 2020</span>
+                            <span>|</span>
+                            <span>Numero do anuncio: 681013232</span>
+                            <span>|</span>
+                            <span>Visualizações: 48</span>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="sidebar">
-                    <p>adfsa</p>
+                    <h6>R$ 60.990</h6>
+
+                    <div class="sidebar-meta">
+
+                    </div>
+
+                    <div class="sidebar-author">
+
+                    </div>
+
+                    <div class="sidebar-subscribe">
+                        <h6>
+                            Envie-me por e-mail quedas de preços e novas listagens para estes resultados de pesquisa:
+                        </h6>
+
+                        <div>
+                            <label for="">img</label>
+                            <input type="text" placeholder="Email">
+                            <button>Subscribe</button>
+                        </div>
+
+                        <div>
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+
+                    </div>
                 </section>
             </div>
 

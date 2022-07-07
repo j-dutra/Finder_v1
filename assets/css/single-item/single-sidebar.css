@@ -1,0 +1,9 @@
+.sidebar {
+    width: 52.6rem;
+    height: 76.0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: ;
+}
